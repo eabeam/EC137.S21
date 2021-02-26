@@ -5,10 +5,10 @@ date: "2/16/2021"
 output: html_document
 ---
 
-# Welcome 
+#EC 137 
 
 
 
-# Unit 1  - Excel 
+## Unit 1  - Excel 
 
-## Guide to Excel 
+[Excel Emergency Kit](excel-emergency.html)
