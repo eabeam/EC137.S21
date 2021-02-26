@@ -1,9 +1,3 @@
-Learning R 
-
-I'm moving us over to a website becuase it is much easier for me to share code and tutorials than on Blackboard. 
-
-
-
 # Lesson 1: Introduction to R
 
 
@@ -81,25 +75,10 @@ Notice that there are two parts: (1) `"dplyr"`  - the name of the package in dou
 
 **Install `dplyr`**, **`ggplot2`**, and **`tidyr`**
 
- 
+
 
 
 
 For those of you with some R experience, you may be familiar and comfortable uniting the power of R with RMarkdown and Git. I'm happy for you to do either or both. From my own experience I'm great at RMarkdown and "advanced beginner" at Git. 
 
-
-
-
-
-
-
-## Resources
-
-
-
-Other classes
-
-
-
-- 
 
