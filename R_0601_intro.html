@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>&quot;Lesson 1: Introduction to R&quot;</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+<title>&quot;Lesson 1: Introduction to R&quot;</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
@@ -237,484 +237,390 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
 }
 
 
- :root {
-  --accent-color: #c1cacc;
-  --accented-background-color: #fafafa;
-  --bg-color: white;
-  --border-color: #e1e7e8;
-  --code-bg-color: #f8f8f8;
-  --text-color: #5b6666;
-  --header-color: #363c3c;
-  --link-color: #f0423d;
-  --side-bar-bg-color: #fafafa;
-  --window-border: 1px solid rgba(0,0,0,.07);
-  --active-file-bg-color: #f2f2f2;
-  /* */
-  --body-font: 'source-sans-pro', sans-serif;
-  --border-radius: 2px;
-  --document-horizontal-margin: 80px;
-  --document-padding-x: 10ch;
-  --font-size: 16px;
-  --h1-fontsize: 2rem;
-  --h2-fontsize: 1.5rem;
-  --h3-fontsize: 1.125rem;
-  --line-height: 1.4;
-  --main-content-margin: 0 auto;
-  --main-content-max-width: 100ch;
-  --monospace-font-size: 14px;
-  --monospace-font: 'source-code-pro', monospace;
-  --monospace-line-height: 1.4;
-  --nav-width: 200px;
-  --vertical-padding: 40px;
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
 }
 
-/* Narrow layout styles */
-@media (max-width: 640px) {
-  :root {
-    --document-padding-x: 4ch;
-    --h1-fontsize: 1.5rem;
-    --h2-fontsize: 1.125rem;
-  }
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
 }
 
-/* Regular font */
-
-/* Monospace font */
-html {
-	font-size: var(--font-size);
-	background-color: var(--bg-color);
-}
-
-html,
 body {
-  color: var(--text-color);
-  font-family: var(--body-font);
-  line-height: var(--line-height);
-}
-
-/* on Windows/Linux, it is the part that is not titlebar or status bar.*/
-content {
-
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
 
 #write {
-	/* size of writing area: */
-  padding-left: var(--document-padding-x);
-  padding-right: var(--document-padding-x);
-  max-width: var(--main-content-max-width);
-  box-sizing: border-box;
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
 }
 
-/**
- * ---------------------
- * Block Elements
- */
-
-/* yaml */
-pre.md-meta-block {
-  background-color: var(--bg-color);
-  padding-bottom: .5rem;
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--border-color);
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
 }
 
-/* headings */
-h1 {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: var(--h1-fontsize);
-  font-weight: bold;
-  color: var(--header-color);
-}
-h1:not(:first-child) {
-  margin-top: 3rem;
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
-
-h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-size: var(--h2-fontsize);
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: var(--h3-fontsize);
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-h4, h5, h6 {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  font-size: 1rem;
-  color: var(--header-color);
-}
-
-h1::before,
-h2::before,
-h3::before {
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: right;
-  width: 3.5ch;
-  padding-right: 1ch;
-  margin-left: -3.5ch;
-  color: var(--accent-color);
-  display: inline-block;
-}
-
-h1::before {
-  content: '#1';
-}
-
-h2::before {
-  content: '#2';
-}
-
-h3::before {
-  content: '#3';
-}
-
-/* table */
-table {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* table header */
-thead {
-}
-
-/* table row */
-tr {}
-
-/* table cell */
-td,
-th {
-  border-style: solid;
-  border-color: var(--border-color);
-  border-width: 1px 0;
-  padding-top: .375rem;
-  padding-bottom: .375rem;
-}
-
-/* Remove table top border if immediately after a H2 which has a border already */
-h2 + table tr:first-child th,
-h2 + table tr:first-child td,
-  border-top-width: 0;
-}
-
-/* tooltip above tables */
-.md-table-edit {
-
-}
-
-/* lists */
-ul {
-
-}
-
-ol {
-
-}
-
-ul li {
-
-}
-
-li p {
-  margin: 0;
-}
-
-.task-list {
-  padding-left: 0;
-}
-
-.task-list-item {
-  padding-left: 1.5em;
-  margin-bottom: 0rem;
-}
-
-#write input[type='checkbox'] {
-  margin-top: 5px;
-}
-
-/* blockquote */
-blockquote {
-  margin: 1rem 0;
-  padding-left: 2ch;
-  margin-left: .5ch;
-  position: relative;
-  overflow: hidden;
-  border-left: 2px solid var(--border-color);
-}
-
-/* hr */
-hr {
-  border: none;
-  border-bottom: 1px solid var(--border-color);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-p {
-  margin: 1rem 0;
-}
-
-/* diagram panel */
-.md-diagram-panel {
-
-}
-
-/* diagram panel in preview */
-#write .md-focus .md-diagram-panel {
-
-}
-
-/* reference link definition */
-.md-def-link {
-
-}
-
-/* footnote definition */
-.md-def-footnote {
-
-}
-
-/**
- * Code Fences
- * see http:/*support.typora.io/Code-Block-Styles
- */
-
-.cm-s-inner {
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: .25rem 0;
-  background-color: var(--accented-background-color);
-}
-.cm-s-inner .CodeMirror-gutters {
-  background: var(--accented-background-color);
-}
-
-/* code tooltip */
-.code-tooltip {
-  box-shadow: none;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  background-color: var(--accented-background-color);
-  border-color: var(--border-color);
-  border-style: solid;
-  border-width: 0 1px 1px 1px;
-}
-
-.code-tooltip input {
-  outline: none;
-  width: 20ch;
-}
-
-.md-fences .code-tooltip {
-  bottom: 0;
-  padding: none;
-}
-
-.md-fences.md-focus .cm-s-inner {
-  /* Remove bottom right border radius when tooltip is shown */
-  border-bottom-right-radius: 0;
-}
-
-/* code tooltip autocomplete list */
-.autoComplt-list {
-  width: 20ch !important;
-  border-radius: var(--border-radius) !important;
-  background-color: var(--accented-background-color) !important;
-  border: 1px solid var(--border-color) !important;
-}
-
-.autoComplt-hint {
-  background-color: transparent !important;
-  margin: 0 !important;
-  padding: 0.125rem 0.375rem !important;
-  color: var(--text-color) !important;
-  line-height: var(--line-height) !important;
-  height: 1.4rem !important;
-}
-.autoComplt-hint-selected {
-  background-color: var(--link-color) !important;
-  color: var(--bg-color) !important;
-}
-
-/**
- * Mermaid Diagrams
- * see https:/*github.com/knsv/mermaid/blob/master/dist/mermaid.css
- */
-
-/**
- * Inline Elements
- */
-
-/* basic styles */
-
-code {
-  font-family: var(--monospace-font);
-  font-size: var(--monospace-font-size);
-  line-height: var(--monospace-line-height);
-  background-color: var(--border-color);
-  padding: 0 .125rem;
-  border-radius: .25rem;
-}
-
-strong {
-
-}
-
-em {
-
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
 
 a {
-  color:  var(--link-color);
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
 }
 
-img {
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
 
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
-/* extend styles */
-
-mark {
-
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
 }
 
-del {
-
+.CodeMirror-lines {
+    padding-left: 4px;
 }
 
-sub {
-
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
 }
 
-sup {
-
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
 }
 
-/**
- * Source Code Mode
- * see http:/*support.typora.io/Code-Block-Styles
- */
-#typora-source {
-	.cm-header {
-
-	}
-
-	.cm-strong {
-
-	}
-
-	.cm-em {
-
-	}
-
-	.cm-link {
-
-	}
-
-	.cm-string {
-
-	}
-
-	.cm-comment {
-
-	}
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
-/**
- * Control UI (optional)
- */
-
-/* button style */
-.btn,
-.btn .btn-default {
-
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
-/* outline area when popover */
-#outline-dropmenu {
 
+.md-task-list-item > input {
+  margin-left: -1.3em;
 }
 
-/* side bar */
-.pin-outline #outline-dropmenu {
-
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
 }
 
-/* when sidepanel is visible */
-.pin-outline #write {
-
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
 }
 
-/* dialogs */
-.modal-content {}
-.modal-title {}
-
-/* search panel */
-#md-searchpanel {
-
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
 }
 
-#write div.md-toc-tooltip {
-	background-color: var(--bg-color);
+.md-mathjax-midline {
+    background: #fafafa;
 }
 
-/**
- * Control UI on Mac (optional)
- */
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
 
-/* quick open panel */
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
 #typora-quick-open {
-	/*background-color: #525C65; */
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
 }
 
-#md-searchpanel,
-.on-search-panel-open header,
-.modal-content,
-.popover,
-.context-menu {
-	/*background-color: @dialog-background; */
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.popover.bottom > .arrow:after {
-	/*border-bottom-color: @dialog-background; */
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-/**
- * Control UI on Windows/Linux (optional)
- */
-
-/* context menu */
-.context-menu {}
-
-/* statue bar */
-footer {
-
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-/**
- * Control UI on Windows Unibody Style (optional)
- */
-
-/* left side mega menu */
-.megamenu-content {
-
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
 }
 
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
 
  :root {--mermaid-font-zoom:1em ;} 
 </style>
 </head>
 <body class='typora-export'>
-<div id='write'  class=''><h1><a name="lesson-1-introduction-to-r" class="md-header-anchor"></a><span>Lesson 1: Introduction to R</span></h1><h2><a name="what-youll-learn" class="md-header-anchor"></a><span>What you&#39;ll learn: </span></h2><p><strong><span>Before class (on your own)</span></strong></p><ol><li><span>Download and install R and RStudio.</span></li><li><span>Complete a tutorial</span></li><li><span>Make sure you can run commands in the command window sucessfully</span></li></ol><p><strong><span>In class</span></strong></p><ol><li><span>RStudio walkthrough</span></li><li><span>General principles of R</span></li><li><span>Using RMarkdown</span></li></ol><h2><a name="lesson" class="md-header-anchor"></a><span>Lesson</span></h2><p><span>Now we&#39;re beginning our R unit. As with Excel, there is </span><em><span>wide variation</span></em><span> in our baseline background with R, perhaps even more so! We will take </span><strong><span>two weeks</span></strong><span> to set aside all policy applications and just think about R. </span></p><h4><a name="what-does-this-mean" class="md-header-anchor"></a><em><span>What does this mean?</span></em><span> </span></h4><p><strong><span>Never used R:</span></strong><span> This is where I am teaching from. If I get too jazzed and you need extra clarification/help, please each out to group mates who have used R and will be able to explain things in a new/different way. If they are stumped, reach out to me! </span></p><p><strong><span>Used R but rusty:</span></strong><span> This should be just right for you, but there will be some review. Enjoy the easy ride! </span></p><p><strong><span>Confident R user</span></strong><span>: There will be a </span><em><span>lot</span></em><span> of review. I will occasionally provide alternative activities you can do instead of the assigned ones if you want to push yourself. It is up to you which you do (and you can jump back and forth, depending on your workload). </span></p><p><span>Things might get a bit tricky now! Don&#39;t worry. It will pay off. </span></p><p><strong><span>Why is this happening:</span></strong><span> </span></p><ul><li><span>Reproducibility is </span><a href='http://www2.stat.duke.edu/courses/Fall17/sta112.01/slides/02-deck.html#5'><span>important</span></a></li><li><span>Things that were horrible in Excel are now faster and more pleasant</span></li><li><span>We can make some really pretty things using </span><code>ggplot</code><span> and friends.</span></li></ul><p><strong><span>What if I&#39;m lost?</span></strong></p><ul><li><span>Message the Teams channel. Think of it as an ongoing conversation</span></li><li><span>Also, have you identified who in your small group has worked w/ R? This is good for everyone to know!</span></li></ul><p><span>For those of you with some R experience, you may be familiar and comfortable uniting the power of R with RMarkdown and Git. I&#39;m happy for you to do either or both. In terms of the support I an provide, I&#39;m quite experienced with RMarkdown and &quot;decently competent beginner&quot; at Git. </span></p><h2><a name="installing-r" class="md-header-anchor"></a><span>Installing R</span></h2><p><span>You can download R from </span><a href='https://cran.r-project.org/'><span>CRAN</span></a><span>. Select your operating system. </span></p><p><strong><span>Windows users</span></strong><span>: Select </span><code>base</code><span>, and then download and install R</span></p><p><strong><span>Mac users</span></strong><span>: Download and install R-4.04.pkg</span></p><p><span>If you get an error message, then you should hold down the </span><code>control</code><span> key while clicking the package, then select &quot;open&quot; (still holding the key), and once you see a warning message, select &quot;open.&quot;</span></p><h2><a name="install-rstudio" class="md-header-anchor"></a><span>Install RStudio</span></h2><ol start='' ><li><p><span>Then, you need to download RStudio. You can either get the standard version (RStudio Desktop) </span><a href='https://rstudio.com/products/rstudio/download/preview/'><span>here</span></a><span>, or you can grab a </span><a href='https://rstudio.com/products/rstudio/download/preview/'><span>&quot;preview&quot; version</span></a><span>, which has fun new updates. I recommend preview version, but it&#39;s your call.</span></p></li><li><p><span>Once you have both installed, open RStudio. You know things are good if you see something that looks like a emptier, sadder version of </span><a href='https://rstudio.com/wp-content/uploads/2014/04/rstudio-workbench.png'><span>this.</span></a></p></li><li><p><span>Now, the test to see if things are working. </span></p><p><span>a. Put your cursor in the pane labelled </span><strong><span>Console</span></strong></p><p><span>b. Type the following: </span><code>x &lt;- 2*2</code><span> and press enter/return. You&#39;ve made an </span><strong><span>object</span></strong><span>! it&#39;s name is </span><code>x</code><span> and it&#39;s equal to </span><code>2*2</code></p><p><span>c. Type the following: </span><code>x</code><span>  and press enter/return. This prints the object. Do you see the number 4? Success!</span></p><p>&nbsp;</p><p><span>What if you are stuck? </span><em><span>Head to Teams!</span></em></p><p>&nbsp;</p></li></ol><h2><a name="packages" class="md-header-anchor"></a><span>Packages </span></h2><p><span>R itself can do all sorts of neat statistical things. But, the bulk of its functionality is not included in the base installation. Rather, we need packages. </span></p><p><span>Packages are a set of programs that live on your computer. You only need to install them once. We will need three important packages: </span></p><ul><li><a href='https://cran.r-project.org/package=dplyr'><span>dplyr</span></a></li><li><a href='https://ggplot2.tidyverse.org/'><span>ggplot2</span></a></li><li><a href='https://tidyr.tidyverse.org/'><span>tidyr</span></a></li></ul><p><span>We can easily install them using the </span><code>install.packages</code><span> command. Type the following into your command window and press enter </span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="R"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="r"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5px; left: 5px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">install.packages</span>(<span class="cm-string">"dplyr"</span>, <span class="cm-variable">dependencies</span> <span class="cm-operator">=</span> <span class="cm-variable">TRUE</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 19px;"></div><div class="CodeMirror-gutters" style="display: none; height: 19px;"></div></div></div></pre><p><span>Notice that there are two parts: </span></p><ol><li><span> </span><code>&quot;dplyr&quot;</code><span>  - the name of the package in double-quotation marks; and </span></li><li><span> </span><code>dependencies = TRUE</code><span> - which tells R to make sure to download any packages that </span><code>dplyr</code><span> needs to run properly. This is optional.</span></li></ol><p>&nbsp;</p></div>
+<div id='write'  class=''><h1><a name="lesson-1-introduction-to-r" class="md-header-anchor"></a><span>Lesson 1: Introduction to R</span></h1><p>&nbsp;</p><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" style="" href="#lesson-1-introduction-to-r">Lesson 1: Introduction to R</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n183"><a class="md-toc-inner" style="" href="#what-youll-learn">What you'll learn: </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n298"><a class="md-toc-inner" style="" href="#lesson">Lesson</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n4"><a class="md-toc-inner" style="" href="#what-does-this-mean">What does this mean? </a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n11"><a class="md-toc-inner" style="" href="#why-is-this-happening"><strong>Why is this happening:</strong> </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n299"><a class="md-toc-inner" style="" href="#installing-r">Installing R</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n300"><a class="md-toc-inner" style="" href="#install-rstudio">Install RStudio</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n49"><a class="md-toc-inner" style="" href="#packages">Packages </a></span></p></div><h2><a name="what-youll-learn" class="md-header-anchor"></a><span>What you&#39;ll learn: </span></h2><p>&nbsp;</p><p><strong><span>Before class (on your own)</span></strong></p><ol><li><span>Download and install R and RStudio.</span></li><li><span>Complete a tutorial</span></li><li><span>Make sure you can run commands in the command window sucessfully</span></li></ol><p><strong><span>In class</span></strong></p><ol><li><span>RStudio walkthrough</span></li><li><span>General principles of R</span></li><li><span>Using RMarkdown</span></li></ol><p>&nbsp;</p><h2><a name="lesson" class="md-header-anchor"></a><span>Lesson</span></h2><p><span>Now we&#39;re beginning our R unit. As with Excel, there is </span><em><span>wide variation</span></em><span> in our baseline background with R, perhaps even more so! We will take </span><strong><span>two weeks</span></strong><span> to set aside all policy applications and just think about R. </span></p><h4><a name="what-does-this-mean" class="md-header-anchor"></a><span>What does this mean? </span></h4><p><strong><span>Never used R:</span></strong><span> This is where I am teaching from. If I get too jazzed and you need extra clarification/help, please each out to group mates who have used R and will be able to explain things in a new/different way. If they are stumped, reach out to me! </span></p><p><strong><span>Used R but rusty:</span></strong><span> This should be just right for you, but there will be some review. Enjoy the easy ride! </span></p><p><strong><span>Confident R user</span></strong><span>: There will be a </span><em><span>lot</span></em><span> of review. I will occasionally provide alternative activities you can do instead of the assigned ones if you want to push yourself. It is up to you which you do (and you can jump back and forth, depending on your workload). </span></p><p><span>Things might get a bit tricky now! Don&#39;t worry. It will pay off. </span></p><h4><a name="why-is-this-happening" class="md-header-anchor"></a><strong><span>Why is this happening:</span></strong><span> </span></h4><ul><li><span>Reproducibility is </span><a href='http://www2.stat.duke.edu/courses/Fall17/sta112.01/slides/02-deck.html#5'><span>important</span></a></li><li><span>Things that were horrible in Excel are now faster and more pleasant</span></li><li><span>We can make some really pretty things using </span><code>ggplot</code><span> and friends.</span></li></ul><p><strong><span>What if I&#39;m lost?</span></strong></p><ul><li><span>Message the Teams channel. Think of it as an ongoing conversation</span></li><li><span>Also, have you identified who in your small group has worked w/ R? This is good for everyone to know!</span></li></ul><p><span>For those of you with some R experience, you may be familiar and comfortable uniting the power of R with RMarkdown and Git. I&#39;m happy for you to do either or both. In terms of the support I an provide, I&#39;m quite experienced with RMarkdown and &quot;decently competent beginner&quot; at Git. </span></p><p>&nbsp;</p><h2><a name="installing-r" class="md-header-anchor"></a><span>Installing R</span></h2><p><span>You can download R from </span><a href='https://cran.r-project.org/'><span>CRAN</span></a><span>. Select your operating system. </span></p><p><strong><span>Windows users</span></strong><span>: Select </span><code>base</code><span>, and then download and install R</span></p><p><strong><span>Mac users</span></strong><span>: Download and install R-4.04.pkg</span></p><p><span>If you get an error message, then you should hold down the </span><code>control</code><span> key while clicking the package, then select &quot;open&quot; (still holding the key), and once you see a warning message, select &quot;open.&quot;</span></p><p>&nbsp;</p><h2><a name="install-rstudio" class="md-header-anchor"></a><span>Install RStudio</span></h2><ol start='' ><li><p><span>Then, you need to download RStudio. You can either get the standard version (RStudio Desktop) </span><a href='https://rstudio.com/products/rstudio/download/preview/'><span>here</span></a><span>, or you can grab a </span><a href='https://rstudio.com/products/rstudio/download/preview/'><span>&quot;preview&quot; version</span></a><span>, which has fun new updates. I recommend preview version, but it&#39;s your call.</span></p></li><li><p><span>Once you have both installed, open RStudio. You know things are good if you see something that looks like a emptier, sadder version of </span><a href='https://rstudio.com/wp-content/uploads/2014/04/rstudio-workbench.png'><span>this.</span></a></p></li><li><p><span>Now, the test to see if things are working. </span></p><p><span>a. Put your cursor in the pane labelled </span><strong><span>Console</span></strong></p><p><span>b. Type the following: </span><code>x &lt;- 2*2</code><span> and press enter/return. You&#39;ve made an </span><strong><span>object</span></strong><span>! it&#39;s name is </span><code>x</code><span> and it&#39;s equal to </span><code>2*2</code></p><p><span>c. Type the following: </span><code>x</code><span>  and press enter/return. This prints the object. Do you see the number 4? Success!</span></p><p>&nbsp;</p><p><span>What if you are stuck? </span><em><span>Head to Teams!</span></em></p><p>&nbsp;</p></li></ol><h2><a name="packages" class="md-header-anchor"></a><span>Packages </span></h2><p><span>R itself can do all sorts of neat statistical things. But, the bulk of its functionality is not included in the base installation. Rather, we need packages. </span></p><p><span>Packages are a set of programs that live on your computer. You only need to install them once. We will need three important packages: </span></p><ul><li><a href='https://cran.r-project.org/package=dplyr'><span>dplyr</span></a></li><li><a href='https://ggplot2.tidyverse.org/'><span>ggplot2</span></a></li><li><a href='https://tidyr.tidyverse.org/'><span>tidyr</span></a></li></ul><p><span>We can easily install them using the </span><code>install.packages</code><span> command. Type the following into your command window and press enter </span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="R"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="r"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">install.packages</span>(<span class="cm-string">"dplyr"</span>, <span class="cm-variable">dependencies</span> <span class="cm-operator">=</span> <span class="cm-variable">TRUE</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>Notice that there are two parts: </span></p><ol><li><span> </span><code>&quot;dplyr&quot;</code><span>  - the name of the package in double-quotation marks; and </span></li><li><span> </span><code>dependencies = TRUE</code><span> - which tells R to make sure to download any packages that </span><code>dplyr</code><span> needs to run properly. This is optional.</span></li></ol><p>&nbsp;</p></div>
 </body>
 </html>

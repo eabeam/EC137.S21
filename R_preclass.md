@@ -1,5 +1,11 @@
 # [Unit 2] Pre-Class Activities
 
+
+
+[TOC]
+
+
+
 ## PC March 16 - Introduction to R (07-01)
 
 The purpose of this pre-class activitiy is to get you set up for us to introduce R in class.
@@ -53,7 +59,7 @@ starwars %>%
 
 ![IG-88's profile](/Users/emilybeam/Dropbox/EC137.S21/?u=https%3A%2F%2Fstatic.comicvine.com%2Fuploads%2Foriginal%2F11135%2F111355667%2F6486631-100029-ig88-990x600.jpg&f=1&nofb=1.png)
 
-## Submit
+### Submit
 
 Submit on Blackboard the answers to the following questions (in our pre-class assignments)
 

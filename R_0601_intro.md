@@ -8,7 +8,13 @@ output: html_document
 
 # Lesson 1: Introduction to R
 
+
+
+[TOC]
+
 ## What you'll learn: 
+
+
 
 **Before class (on your own)**
 
@@ -22,11 +28,13 @@ output: html_document
 2. General principles of R
 3. Using RMarkdown
 
+
+
 ## Lesson
 
 Now we're beginning our R unit. As with Excel, there is *wide variation* in our baseline background with R, perhaps even more so! We will take **two weeks** to set aside all policy applications and just think about R. 
 
-#### *What does this mean?* 
+#### What does this mean? 
 
 **Never used R:** This is where I am teaching from. If I get too jazzed and you need extra clarification/help, please each out to group mates who have used R and will be able to explain things in a new/different way. If they are stumped, reach out to me! 
 
@@ -36,7 +44,7 @@ Now we're beginning our R unit. As with Excel, there is *wide variation* in our 
 
 Things might get a bit tricky now! Don't worry. It will pay off. 
 
-**Why is this happening:** 
+#### **Why is this happening:** 
 
 - Reproducibility is [important](http://www2.stat.duke.edu/courses/Fall17/sta112.01/slides/02-deck.html#5)
 - Things that were horrible in Excel are now faster and more pleasant
@@ -49,6 +57,8 @@ Things might get a bit tricky now! Don't worry. It will pay off.
 
 For those of you with some R experience, you may be familiar and comfortable uniting the power of R with RMarkdown and Git. I'm happy for you to do either or both. In terms of the support I an provide, I'm quite experienced with RMarkdown and "decently competent beginner" at Git. 
 
+
+
 ## Installing R
 
 You can download R from [CRAN](https://cran.r-project.org/). Select your operating system. 
@@ -58,6 +68,8 @@ You can download R from [CRAN](https://cran.r-project.org/). Select your operati
 **Mac users**: Download and install R-4.04.pkg
 
 If you get an error message, then you should hold down the `control` key while clicking the package, then select "open" (still holding the key), and once you see a warning message, select "open."
+
+
 
 ## Install RStudio
 
