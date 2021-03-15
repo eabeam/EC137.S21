@@ -45,13 +45,13 @@ library(tidyverse)
 library(babynames)
 
 ```
-If it's not automatically displayed, you can click on the "Console" window to make sure that ran. 
+If it's not automatically displayed, you can click on the "Console" window to make sure that it ran. 
 
 ### Results from Data Visualization Basics
 
 In this code block, enter the code you wrote for Exercise 2 of "A code template" in the [Data Visualization Basics](https://rstudio.cloud/learn/primers/1.1) tutorial. Because `mpg` is a pre-loaded dataset, you can work with it on your computer without any additional setup!
 
-Exercise 2: Make a scatterplot of `cty` vs `hwy`.
+> Exercise 2: Make a scatterplot of `cty` vs `hwy`.
 
 ```{r exercise1}
 
@@ -79,7 +79,7 @@ Use the next code chunk to put your results from "Your Name" in the `%>%` sectio
   
 ### Reflection
 
-In this space, answer the following prompts (no word limit): 
+In this space, type your answer to the following prompts (no word limit): 
 
 - What are 2 questions you had or concepts you felt uncomfortable with?
 
