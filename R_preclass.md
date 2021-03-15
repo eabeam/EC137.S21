@@ -8,11 +8,9 @@
 
 ## PC March 16 - Introduction to R (07-01)
 
-The purpose of this pre-class activitiy is to get you set up for us to introduce R in class.
+The purpose of this pre-class activitiy is to get you set up for us to introduce R in class. See below if you're an advanced user.
 
-Previous R user? Most of this will not be necessary. You should still answer the prompts, which will require you to do parts (7) and (8) of the [assignment](#Assignment).
 
-The [R Introduction](R_0601_intro.html) page contains instructions on installing R and R Studio, plus some general background.
 
 ### Assignment
 
@@ -61,6 +59,14 @@ starwars %>%
 
 ![IG-88's profile](images/ig88.png)
 
+
+
+#### Advanced user?
+
+ Most of this will not be necessary. You should still answer the prompts, which will require you to do parts (7) and (8) of the [assignment](#Assignment).
+
+The [R Introduction](R_0601_intro.html) page contains instructions on installing R and R Studio, plus some general background.
+
 ### Submit
 
 Submit on Blackboard the answers to the following questions (in our pre-class assignments)
@@ -80,6 +86,21 @@ Submit on Blackboard the answers to the following questions (in our pre-class as
 ### Assignment
 
 All instructions are available [here](R_0702_template.html). You'll want to download the following [template](R_0702_template.Rmd) and open it in RStudio.
+
+
+
+
+
+#### Advanced user? 
+
+If you are already comfortable with RMarkdown, `dplyr`, and the rudiments of `ggplot`, then don't do the assignment. Instead, do the following: 
+
+1. Install the `babynames` package. 
+2. Pick a movie or TV show that has had very specific names. If you're stuck, you could think about Dallas, 90210, Game of Thrones, basically any popular Disney movie, any movie from the Star Wars franchise, etc. 
+3. Make a plot of the rise (and fall?) of a set of names (as a share of all baby names of that gender) from that show over time. **OR**, make a different sort of graph (which Disney movie princess has affected a larger share of names?)! Bring in a new theme using the `ggthemes` package if you'd like.
+4. Put your code and output in a .Rmd file and knit to PDF/word/html. Upload that instead.
+
+
 
 ### Submit
 
