@@ -16,7 +16,7 @@ The [R Introduction](R_0601_intro.html) page contains instructions on installing
 
 ### Assignment
 
-1. [Install R](R_0601_intro.html/#Install-R)
+1. Install R
 
    You can download R from [CRAN](https://cran.r-project.org/). Select your operating system. 
 
@@ -26,11 +26,11 @@ The [R Introduction](R_0601_intro.html) page contains instructions on installing
 
    If you get an error message, then you should hold down the `control` key while clicking the package, then select "open" (still holding the key), and once you see a warning message, select "open."
 
-3. [Install RStudio](R_0601_intro.html/#Install-RStudio)
+3. Install R Studio. You can either get the standard version (RStudio Desktop) [here](https://rstudio.com/products/rstudio/download/preview/), or you can grab a ["preview" version](https://rstudio.com/products/rstudio/download/preview/), which has fun new updates. I recommend preview version, but it's your call.
 
 4. Complete [Programming Basics](https://rstudio.cloud/learn/primers/1.2) tutorial (*Note: you will need to create a free RStudio Cloud account*). In terms of time budgeting, note that this will involve you watching 7 videos that are 1-2 minutes long. There will also be short activities you can do, in which you type into boxes and click "run code" to test it. You should do these too!
 
-5. Open RStudio on your computer.
+5. Open RStudio on your computer. You know things are good if you see something that looks like a emptier, sadder version of [this.](https://rstudio.com/wp-content/uploads/2014/04/rstudio-workbench.png)
 
 6. Type the following code in your Console window and press Enter:  `sqrt(pi)`. Look, you calculated $\sqrt{\pi}$!
 
@@ -41,6 +41,8 @@ The [R Introduction](R_0601_intro.html) page contains instructions on installing
    ```
 
    It incldues fun friends like `dplyr` (pronounced "dee-plier") and more!
+
+   
 
 7. Tell R to use `dplyr`. Type the following code in your Console window and press Enter: 
 
@@ -57,7 +59,7 @@ starwars %>%
 
 ​		What is IG-88's height, mass, and homeworld? 
 
-![IG-88's profile](/Users/emilybeam/Dropbox/EC137.S21/?u=https%3A%2F%2Fstatic.comicvine.com%2Fuploads%2Foriginal%2F11135%2F111355667%2F6486631-100029-ig88-990x600.jpg&f=1&nofb=1.png)
+![IG-88's profile](images/ig88.png)
 
 ### Submit
 
@@ -67,3 +69,16 @@ Submit on Blackboard the answers to the following questions (in our pre-class as
 2. If you haven't used R before, what challenges did you encounter going through the following steps? What questions do you have? 
 3. What is IG-88's height, mass, and homeworld? 
 
+
+
+---
+
+## PC March 18 - Introduction to `dplyr` (07-02)
+
+
+
+### Assignment: 
+
+All instructions are available [here](R_0702_template.html). You'll want to download the following [template](R_0702_template.Rmd) and open it in RStudio.
+
+Your output should be a Word/PDF/html (pick whichever) that you created by knitting from the template that you edited. 

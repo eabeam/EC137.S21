@@ -6,29 +6,27 @@ output: html_document
 
 ---
 
-# Lesson 1: Introduction to R
-
 
 
 [TOC]
 
-## What you'll learn: 
+# Lesson 1: Introduction to R
+
+## What you'll learn
 
 
 
 **Before class (on your own)**
 
 1. Download and install R and RStudio.
-2. Complete a tutorial
-3. Make sure you can run commands in the command window sucessfully
+2. Basics of R: what are functions, arguments, vectors, lists, frames, and packages?
+3. Make sure you can run simple commands in the RStudio sucessfully
 
 **In class**
 
-1. RStudio walkthrough
-2. General principles of R
-3. Using RMarkdown
-
-
+1. Understand basic elements of RStudio and how to use them
+2. Set up and implement a workflow using RMarkdown (*we're using a basic workflow - putting text and code in a general Rmd and knitting it, but you're welcome to do fancier things*)
+3. 
 
 ## Lesson
 
@@ -44,7 +42,7 @@ Now we're beginning our R unit. As with Excel, there is *wide variation* in our 
 
 Things might get a bit tricky now! Don't worry. It will pay off. 
 
-#### **Why is this happening:** 
+#### Why is this happening
 
 - Reproducibility is [important](http://www2.stat.duke.edu/courses/Fall17/sta112.01/slides/02-deck.html#5)
 - Things that were horrible in Excel are now faster and more pleasant
@@ -69,7 +67,7 @@ You can download R from [CRAN](https://cran.r-project.org/). Select your operati
 
 If you get an error message, then you should hold down the `control` key while clicking the package, then select "open" (still holding the key), and once you see a warning message, select "open."
 
-
+**Stuck?** Check out this [tutorial](https://tutorials.shinyapps.io/00-setup/).
 
 ## Install RStudio
 
@@ -87,7 +85,7 @@ If you get an error message, then you should hold down the `control` key while c
 
    
 
-   What if you are stuck? *Head to Teams!*
+   **Stuck?** Check out this [tutorial](https://tutorials.shinyapps.io/00-setup/).
 
    
 
@@ -95,11 +93,11 @@ If you get an error message, then you should hold down the `control` key while c
 
 R itself can do all sorts of neat statistical things. But, the bulk of its functionality is not included in the base installation. Rather, we need packages. 
 
-Packages are a set of programs that live on your computer. You only need to install them once. We will need three important packages: 
+Packages are a set of programs that live on your computer. You (typically) only need to install them once. We will need three important packages: 
 
 - [dplyr](https://cran.r-project.org/package=dplyr)
 - [ggplot2](https://ggplot2.tidyverse.org/)
-- [tidyr](https://tidyr.tidyverse.org/)
+- [tidyverse](https://tidyr.tidyverse.org/)
 
 We can easily install them using the `install.packages` command. Type the following into your command window and press enter 
 
@@ -111,5 +109,20 @@ Notice that there are two parts:
 
 1.  `"dplyr"`  - the name of the package in double-quotation marks; and 
 2.  `dependencies = TRUE` - which tells R to make sure to download any packages that `dplyr` needs to run properly. This is optional.
+
+### Resources
+
+Are you stuck on something? The Google is your friend, of course, but here is some specific guidance: 
+
+#### Installing R, RStudio, or Packages: 
+
+**Stat545:** [Chapter 1 Install R and RStudio](https://stat545.com/install.html) 
+
+#### Working in the command line: 
+
+**Stat545:** [Chapter 2 R Basics and Workflow](https://stat545.com/r-basics.html#basics-of-working-with-r-at-the-command-line-and-rstudio-goodies)
+
+**Andrew Heiss:** [Quick Tour of RStudio](https://www.youtube.com/watch?time_continue=440&v=cnQ-v1UUWyE&feature=emb_logo) (video, 12m)
+
 
 

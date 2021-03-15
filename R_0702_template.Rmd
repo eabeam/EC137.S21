@@ -1,0 +1,95 @@
+---
+title: "Pre-Class Activity 07-02 Template"
+author: "Your Name Here"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+# Pre-class activity (07-02)
+
+Welcome to the second pre-class activity! 
+
+Start by changing your name above!
+
+## Step 1: 
+Complete the following 3 primers (*you will need to log-in to your RStudio cloud account again*)
+
+1. [Data visualization basics](https://rstudio.cloud/learn/primers/1.1)
+2. [Working with tibbles](https://rstudio.cloud/learn/primers/2.1)
+3. [Isolating data with `dplyr`](https://rstudio.cloud/learn/primers/2.2)
+
+You'll notice that you can work through examples in the tutorial, run your code, and compare against the solutions. I strongly recommend that you copy and paste your code into a R script or R markdown document as you go, which will give you a record of what you've done. You'll also need to bring in some answers in order to generate your PC document (below).
+
+
+## Step 2: Editing this markdown document
+
+### Calling `dplyr` and `ggplot2` library
+
+If you haven't already, install the tidyverse by running the codeblock below. You will also need to install `babynames`. You will want to "uncomment" the ones you need by deleting the `#` and running. 
+
+```{r include=FALSE}
+  
+#install.packages("tidyverse",dependencies=TRUE)
+#install.packages("babynames")
+```
+
+Note that in the code block, the command `include=FALSE` means that this block will not be included when you knit your file!
+
+Now, run this block of code to load your libraries. See how the three dashes to open and close the code, along with the bracket, indicate a code block. Here, I've named this code block "setup". Note that when you start using `tidyverse` it will automatically load our friends `ggplot2` and `dplyr`!
+
+```{r setup, include=FALSE }
+  
+library(tidyverse)
+library(babynames)
+
+```
+If it's not automatically displayed, you can click on the "Console" window to make sure that ran. 
+
+### Results from Data Visualization Basics
+
+In this code block, enter the code you wrote for Exercise 2 of "A code template" in the [Data Visualization Basics](https://rstudio.cloud/learn/primers/1.1) tutorial. Because `mpg` is a pre-loaded dataset, you can work with it on your computer without any additional setup!
+
+Exercise 2: Make a scatterplot of `cty` vs `hwy`.
+
+```{r exercise1}
+
+# Put your code here!
+
+
+```
+
+
+### Results from Isolating Data 
+
+Use the next code chunk to put your results from "Your Name" in the `%>%` section of [Isolating Data with dplyr](https://rstudio.cloud/learn/primers/2.2)
+
+> In the code chunk below, use a combination of dplyr and ggplot2 functions with %>% to:
+    Trim babynames to just the rows that contain your name and your sex
+    Trim the result to just the columns that will appear in your graph (not strictly necessary, but useful practice)
+    Plot the results as a line graph with year on the x axis and prop on the y axis
+    
+```{r exercise2}
+# Put your code here!
+
+```
+
+
+  
+### Reflection
+
+In this space, answer the following prompts (no word limit): 
+
+- What are 2 questions you had or concepts you felt uncomfortable with?
+
+- Were there any resources you used to get things working besides the tutorials themselves? 
+
+### Knit! 
+
+Finally, knit this document to Word, html, or PDF and upload into Blackboard. 
+
+If you want to do PDF but are getting an error, install the `tinytex` package.
+
+*Note:* If you get a weird error message about `Error in contrib.url(repos,"source")...` comment out the two lines that install your packages.
+
