@@ -77,8 +77,10 @@ Submit on Blackboard the answers to the following questions (in our pre-class as
 
 
 
-### Assignment: 
+### Assignment
 
 All instructions are available [here](R_0702_template.html). You'll want to download the following [template](R_0702_template.Rmd) and open it in RStudio.
+
+### Submit
 
 Your output should be a Word/PDF/html (pick whichever) that you created by knitting from the template that you edited. 
