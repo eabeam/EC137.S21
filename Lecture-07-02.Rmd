@@ -1,9 +1,4 @@
----
-title: "Lesson 07-02: Introduction to `dplyr`"
-author: "Emily Beam"
 
-output: html_document
----
 
 # Lesson 07-02: Introduction to `dplyr`
 
