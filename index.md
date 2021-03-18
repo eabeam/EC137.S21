@@ -1,7 +1,6 @@
 ---
 title: "EC137"
 author: "Emily Beam"
-
 output: html_document
 ---
 
