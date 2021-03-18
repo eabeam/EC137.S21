@@ -1,7 +1,6 @@
 ---
 title: 'Lesson 07-02: In-class assignment'
 author: "NAME"
-date: "3/18/2021"
 output:
   html_document: default
   pdf_document: default

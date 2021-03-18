@@ -1,10 +1,3 @@
----
-title: "EC137"
-author: "Emily Beam"
-output: html_document
-
----
-
 # EC137: Using Data for Economic Policy 
 
 Instructor: Emily Beam
