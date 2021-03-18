@@ -85,9 +85,15 @@ Submit on Blackboard the answers to the following questions (in our pre-class as
 
 ### Assignment
 
-All instructions are available [here](R_0702_template.html). You'll want to download the following [template](R_0702_template.Rmd) and open it in RStudio.
+Complete the following 3 primers:
 
+1. [Data visualization basics](https://rstudio.cloud/learn/primers/1.1)
+2. [Working with tibbles](https://rstudio.cloud/learn/primers/2.1)
+3. [Isolating data with `dplyr`](https://rstudio.cloud/learn/primers/2.2)
 
+You'll notice that you can work through examples in the tutorial, run your code, and compare against the solutions. I strongly recommend that you copy and paste your code into a R script or R markdown document as you go, which will give you a record of what you've done. You'll also need to bring in some answers in order to generate your PC document (below).
+
+The remaining instructions are available [here](R_0702_template.html). You'll want to download the following [template](R_0702_template.Rmd) and open it in RStudio.
 
 
 
@@ -100,8 +106,10 @@ If you are already comfortable with RMarkdown, `dplyr`, and the rudiments of `gg
 3. Make a plot of the rise (and fall?) of a set of names (as a share of all baby names of that gender) from that show over time. **OR**, make a different sort of graph (which Disney movie princess has affected a larger share of names?)! Bring in a new theme using the `ggthemes` package if you'd like.
 4. Put your code and output in a .Rmd file and knit to PDF/word/html. Upload that instead.
 
-
-
 ### Submit
 
-Your output should be a Word/PDF/html (pick whichever) that you created by knitting from the template that you edited. 
+Your output should be a Word/PDF/html (pick whichever) that you created by knitting from the template that you edited. Note that if you try to upload a html file on to Blackboard, you will need to compress/zip it first. 
+
+
+
+## 

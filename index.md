@@ -11,7 +11,7 @@ Instructor: Emily Beam
 
 E-mail: emily.beam@uvm.edu
 
-Office Hours: Tuesday 1-2; Thursday 9-10
+Office Hours: Tuesday 1-2pm; Thursday 9-10am
 
 
 
@@ -23,40 +23,73 @@ Office Hours: Tuesday 1-2; Thursday 9-10
 
 
 
-## Unit 1  - Excel 
-
-### Resources 
-
-### [Excel Emergency Kit](excel-emergency.html)
-
-
-
 
 
 ---
 
 
 
-## Unit 2 - R 
-
-### [06-01 Introduction to R](R_0601_intro.html)
+# Unit 2 - R 
 
 
 
 
 
-### R References
+## [Pre-class activities](R_preclass.html)
+
+
+
+## Schedule
+
+### Week 7
+
+#### 07-01: Introduction to R
+
+| --            | --                                                           |
+| ------------- | ------------------------------------------------------------ |
+| **Pre-class** | Complete [pre-class activity.](R_preclass.html)              |
+| **Lesson**    | [[Introduction to R](R_0601_intro.html)                      |
+| **Downloads** | None                                                         |
+| **Resources** | [RMarkdown cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) |
+
+
+
+#### 07-02 Introduction to `dplyr`
+
+| --            | --                                                           |
+| ------------- | ------------------------------------------------------------ |
+| **Pre-class** | Complete [07-02 pre-class activity.](R_preclass.html)        |
+| **Lesson**    | [07-02 Introduction to dplyr](Lecture-07-02.html)                   |
+| **Downloads** | [PC: 07-02 template](R_0702_template.Rmd)                        |
+|               | [In-class: 07-02 template](Lesson_0702_inclass.Rmd)  
+| **Resources** | [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) |
+
+### Week 8  Data visualization in R
+
+#### 08-01 Introduction to ggplot2
+
+#### 08-02 Using ggplot
+
+### Week 9 Inequality
+
+
+
+
+
+## R References
 
 #### Quick R Guides
 
 - [R cheat sheet](resources/R/r-cheat-sheet-3.pdf)
 - [RStudio cheat sheet](resources/R/rstudio-ide.pdf)
+- [RMarkdown cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) 
 
 #### General R Instruction
 
 [**R for Data Science**](https://r4ds.had.co.nz/): A free online book for learning the basics of R and the tidyverse.
 
-[**R and RStudio cheat sheets**](https://www.rstudio.com/resources/cheatsheets/): A large collection of simple cheat sheets for RStudio, **ggplot2**, and other R-related things.
+[**R and RStudio cheat sheets**](https://www.rstudio.com/resources/cheatsheets/): A large collection of simple cheat sheets for RStudio, `ggplot2', and other R-related things.
 
 [**Stat 545**](http://stat545.com/): [Dr. Jenny Bryan](https://twitter.com/JennyBryan) at RStudio has an entire introductory course in R, visualization, and data analysis online.
 
@@ -79,6 +112,14 @@ Office Hours: Tuesday 1-2; Thursday 9-10
 ## Unit 3 - Tableau 
 
 
+
+
+
+## Archive
+
+### 
+
+### [Excel Emergency Kit](excel-emergency.html)
 
 
 

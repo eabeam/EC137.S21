@@ -2,21 +2,44 @@
 
 ## 07.01 Intro
 
-Before class: 
+### Before class 
 
-Install R and complete basic tutorial
+Install R, install RStudio
+
+Complete [Programming Basics](https://rstudio.cloud/learn/primers/1.2) tutorial
+
+- Functions
+
+- Arguments
+
+- Objects
+
+- Vectors
+
+- Types
+
+- Lists
+
+- Packages
+
+  ### During class
+
+1. Overview of unit
+2. Introduction to R - walk through interface 
+3. Installing packages, library 
+4. General principles
+5. Setting up and running R Markdown 
+6. In small groups - make a basic RMarkdown file 
 
 
-
-1. Introduction to R - walk through interface 
-2. Installing packages, library 
-3. General principles
-4. Setting up and running R Markdown 
-5. In small groups - make a basic RMarkdown file 
 
 ## 07.02 Tidyverse
 
 Before class
+
+1. [Data visualization basics](https://rstudio.cloud/learn/primers/1.1)
+2. [Working with tibbles](https://rstudio.cloud/learn/primers/2.1)
+3. [Isolating data with `dplyr`](https://rstudio.cloud/learn/primers/2.2)
 
 
 
@@ -26,19 +49,19 @@ Turn the activities into small group activities
 
 
 
-## 07.01 Graphics 
+## 08.01 Graphics 
 
 Deliver this lesson https://datavizm20.classes.andrewheiss.com/example/04-example/
 
 
 
-## 07.02 Graphics II 
+## 08.02 Graphics II 
 
 
 
 ## Exercise 03 
 
-Mini-assignment https://datavizm20.classes.andrewheiss.com/assignment/03-exercise/
+Mini-assignment https://	.classes.andrewheiss.com/assignment/03-exercise/
 
 Mini-assignment https://datavizm20.classes.andrewheiss.com/assignment/04-exercise/
 

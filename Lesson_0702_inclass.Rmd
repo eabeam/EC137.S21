@@ -1,0 +1,200 @@
+---
+title: 'Lesson 07-02: In-class assignment'
+author: "NAME"
+date: "3/18/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+
+## Set-up
+
+This block will install the gapminder package and load it. If this is your first time, you will need to "uncomment" the `install.packages` line in order to install it. You will want to comment it back out or delete it once it's installed, or it can create problems when knitting
+
+```{r load-libraries, warning=FALSE, message=FALSE}
+# install.packages("gapminder")
+library(tidyverse)
+library(gapminder)
+```
+
+Now that we've loaded the library, we have access to a *data frame*. Take a look at the data set by running this code. You can also type `View(gapminder)` into the console to see *all* the data, which will show up in a new window.
+
+Note that you can use `head()` and `tail()` to show the first and last six rows of the data as well. What happens when you run `head(gapminder,20)`?
+
+```{r}
+# Show a tibble
+gapminder
+
+# Show the first six rows (6 is default)
+head(gapminder)
+
+# Show the last six rows (6 is default)
+
+tail(gapminder)
+
+## What happens here? 
+
+head(gapminder,20)
+
+
+```
+
+
+## Selecting with `select()` 
+
+We can select specific columns or a range of columns using `select()`
+
+What does this do?
+```{r select-demo, eval=FALSE, include=FALSE}
+
+#select(gapminder,country)
+
+
+#select(gapminder,country:lifeExp)
+
+#select(gapminder,-continent)
+
+
+```
+
+Write two different ways to select country, continent, year, and gdpPercap
+
+```{r select}
+
+# First way to select country, continent, year, and gdpPercal
+
+# Second way to select country, continent, year, and gdpPercal
+
+
+
+```
+## Filtering with `filter()`
+
+Recall that we can use `filter()` restrict our data according to criteria. We can display it as is, or we can assign it to an object if we want to use that restricted data later. 
+
+You can also use multiple conditions, and these will extract rows that meet every test. By default, if you separate the tests with a comma, R will consider this an “and” test and find rows that are both Denmark and greater than 2000.
+
+What does this do?
+
+```{r filter-demo}
+
+filter(gapminder,gdpPercap < 1000)
+
+# Note that putting parentheses around the entire line below will assign the object /and/ display it
+
+(verypoor <- filter(gapminder, year == 1992, gdpPercap<500))
+
+
+```
+
+Use `filter()` to do the following: 
+```{r filter} 
+
+# Show all data for Canada
+
+## Show all data for Oceania
+
+## Show all rows where the life expectancy is greater than 82
+
+## Show all countries where the life expetancy is greater than 82 and the country is in Africa (you can use $ to select)
+
+
+```
+
+## Arrange 
+
+We sort our data using `arrange()`
+
+The first line sorts by year, then by country. What does the second line do? What does the third line do? 
+
+```{r arrange-demo}
+
+arrange(gapminder,year, country)
+
+
+arrange(gapminder,desc(year), continent, country)
+```
+
+
+Use `arrange()` to do the followin:
+```{r arrange} 
+
+# Sort the data by year, then by descending life expectancy
+
+
+```
+
+## Piping
+You can nest commands inside other commands to combine them, but your life will be 100% better with... piping! (The keyboard shortcut is `Shift-Command-M` on a Mac, or `Ctrl-Shift-M` on a PC)
+
+```{r piping} 
+
+# Sort by descending life expectancy in 2007
+
+gapminder %>% filter(year == 2007) %>% arrange(desc(lifeExp))
+
+## Show just population data, year and country names when looking at the most populous countries in 1977. Note that you cannot filter on something you didn't select!
+
+
+## Does not work
+#gapminder %>% select(country,pop) %>% filter(year == 1977) %>% arrange(desc(pop))
+
+gapminder %>% select(country,year,pop) %>% filter(year == 1977) %>% arrange(desc(pop))
+
+```
+
+Use `arrange()` and `filter()` to do the following:
+```{r arrange-filter} 
+
+# Examine the countries with the lowest life expectancy in 2002
+
+
+```
+
+In general, you can also use help files, Google, and other resources to find new commands. I wanted to list countries that ever had life expectancies below 35. 
+```{r extra} 
+
+
+gapminder %>%  filter(lifeExp < 35) 
+
+
+
+```
+
+
+This is okay, but there are lots of duplicates! I also don't want to pick just one year, because life expectancies aren't always increasing. What's one way to solve this if you don't know where to start? 
+
+1. Googled what I wanted to do "list distinct observations" (it may take a few tries)
+2. Looked for a command that worked with frames. 
+3. Ended up in the `dplyr` documentation (surprise!) with the [distinct](https://dplyr.tidyverse.org/reference/distinct.html) command. 
+4. Reviewed briefly, but then jumped down to examples to make sure I knew how to apply it.
+
+```{r extra-distinct} 
+
+
+gapminder %>%  filter(lifeExp < 35) %>% distinct(country)
+
+
+```
+
+
+## Basic plotting
+
+Next week we'll do more plotting. For now, use what we know about filters to create a second plot that shows the distribution of per-capita GDP for 2007.
+
+```{r histogram}
+
+## What does this plot do? 
+gapminder %>%  filter(year == 1992) %>% ggplot(mapping=aes(y=lifeExp)) + 
+  geom_histogram()
+
+## Put revised code that plots a histogram for 2007 that plots per-capita GDP
+
+
+```
+
+## All done! 
+Knit me and upload me to BB. If you knit to an html file, you will need to compress it first. 
+

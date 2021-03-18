@@ -1,0 +1,230 @@
+---
+title: "Lesson 07-02: Introduction to `dplyr`"
+author: "Emily Beam"
+date: "3/18/2021"
+output: html_document
+---
+
+# Lesson 07-02: Introduction to `dplyr`
+
+[TOC]
+
+*These lessons draw heavily from the excellent book, [R for Data Science](https://r4ds.had.co.nz/workflow-basics.html)* 
+
+
+
+## Activities
+
+1. Download this markdown template: [Lesson_0702_inclass.Rmd](Lesson_0702_inclass.Rmd). You can knit it to html for easier reading, or you can load the html version here: [Lesson_0702_inclass.html](Lesson_0702_inclass.html).
+2. Work through the various prompts and questions in the markdown file. Stay in your channel w/ your group-mates so you can discuss challenges, share resources, and make things easier. 
+3. If something isn't clear or you want more background, recall these three resources: 
+   1. The RStudio tutorials you accessed for the pre-class activities
+   2. References linked to below :point_down:
+   3. The Google
+4. Knit your edited markdown file to document and upload to BB. Remember to compress if you use an html file. 
+
+## Objectives
+
+Become comfortable with the following commands from `dplyr` and `ggplot2`
+
+- Extract rows/cases with `filter()`
+- Extract columns/variables with `select()`
+- Arrange/sort rows with `arrange()`
+- Make a basic histogram
+
+Essentially, we're practicing with the commands we learned for our pre-class activities.
+
+
+
+## R Basics
+
+We can use R as a calculator. You can enter all sort of things in the console.
+
+```{r}
+1 / 200 * 2
+
+(59 + 2 + 2) / 3
+
+sin(pi / 2)
+
+
+```
+
+You can create new objects with `<-`. This is an *assignment statement* because it assigns something to an object. 
+
+```{r}
+# object_name <- value
+```
+
+Object names must start with a letter, and can only contain letters, numbers, `_` and `.`. It is a good idea to use words that are descriptive. Personally, i like **snake_case** because when you double click on it, you select the entire object (rather than **this-way**) 
+
+```{
+i_use_snake_case
+otherPeopleUseCamelCase
+some.people.use.periods
+And_aFew.People_RENOUNCEconvention
+}
+```
+
+You can type the name of an object to view it. You can update the object at any time!
+
+```{r}
+this_is_a_really_long_name <- 2.5
+this_is_a_really_long_name
+```
+
+
+
+#### Functions
+
+R has lots of functions of this form `function_name(arg1 = val1, arg2 = val2, ...)`
+
+Take a look at a basic function, `seq`. If you type it into R, note that it will help by adding parentheses, etc. When you make an assignment, you won't see the value. You'll have to ask R to print it.
+
+```{r}
+seq(1,10)
+x <- seq(1,10)
+x
+
+```
+
+Or, you can speed things up by surrounding the entire thing with parentheses: 
+
+```{r}
+
+(x <- seq(1,10))
+
+```
+
+
+#### Loading data
+
+We're going to work with [gapminder](https://www.gapminder.org/data/) [data](https://www.rdocumentation.org/packages/gapminder/versions/0.3.0)! This is just an excerpt of the data for simplicity, but we can play more later on.[^1]
+
+You can bulk download some or all gapfinder data through various [repositories](https://www.gapminder.org/data/).
+
+This block will install the gapminder package and load it. If this is your first time, you will need to "uncomment" the `install.packages` line in order to install it. You will want to comment it back out or delete it once it's installed, or it can create problems when knitting
+
+```{r}
+# install.packages("gapminder")
+library(gapminder)
+```
+
+Now that we've loaded the library, we have access to a *data frame*
+
+```{r}
+gapminder
+```
+
+
+Why do we only see a bit of the data frame? It is very big. We are looking at a "[tibble](https://r4ds.had.co.nz/tibbles.html)," part of the `dplyr` universe, which shows the first 10 rows of a variable. It's a bit easier to work with. If you want to see all observations and variables, you can type `View()`.
+
+One particular handy thing you can do is select one variable using `$`. 
+
+```{r}
+gapminder$dep_delay
+```
+
+There are several types of data listed here (there are a few more types as well!): 
+
+- `int` stands for integers.
+- `dbl` stands for doubles, or real numbers.
+- `chr` stands for character vectors, or strings.
+- `dttm` stands for date-times (a date + a time).
+
+## Recap of `dplyr`
+
+Every **dplyr** verb follows the same pattern. The first argument is always a data frame, and the function always returns a data frame:
+
+```{R}
+#VERB(DATA_TO_TRANSFORM, STUFF_IT_DOES)
+```
+
+In addition to interactive RStudio tutorials, my favorite source is  [R for Data Science](https://r4ds.had.co.nz/workflow-basics.html) - super clear explanations and walkthroughs! 
+
+| Command       | What it does                                                 | Excel equivalent                                  | Help!                                                        |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |
+| `filter()`    | Restrict observations within your dataframe based on 1+ criteria | `IF()` and `IFS()`                                | [Filter rows with `filter()`](https://r4ds.had.co.nz/transform.html#filter-rows-with-filter) |
+| `arrange()`   | Sort the order of observations                               | Data/Sort...                                      | [Arrange rows with `arrange()`](https://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange) |
+| `select()`    | Show only a certain set of variables (columns)               | Hiding various columns                            | [Select columns with `select()`](https://r4ds.had.co.nz/transform.html#select) |
+| `mutate()`    | Make new variables (columns)                                 | Adding a new column that contains a formula       | [Add new variables with `mutate()`](https://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate) |
+| `summarize()` | Generate summary statistics  - essentially "collapses" your data to those statistics | It's `AVERAGE()`, `COUNT()`, `MEDIAN()` and more! | [Grouped summaries with `summarize()`](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) |
+| `group_by()`  | Groups your data by a set of categories (let's you calculate means by state, for example) | Embedded in Pivot tables                          | [Grouped summaries with `summarize()`](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) |
+|               |                                                              |                                                   |                                                              |
+
+
+
+### Logical operators
+
+R using standard operators for comparisons: `>`, `>=`, `<`, `<=`, `!=` (not equal), and `==` (equal).
+
+| Test        | Meaning                  |
+| ----------- | ------------------------ |
+| `x < y`     | Less than                |
+| `x > y`     | Greater than             |
+| `x == y`    | Equal to                 |
+| `x <= y`    | Less than or equal to    |
+| `x >= y`    | Greater than or equal to |
+| `x != y`    | Not equal to             |
+| `x %in% y`  | In (group membership)    |
+| `is.na(x)`  | Is missing               |
+| `!is.na(x)` | Is not missing           |
+
+You can also use “or” with “`|`” and “not” with “`!`”:
+
+| Operator | Meaning |
+| -------- | ------- |
+| `a & b`  | and     |
+| `a | b`  | or      |
+| `!a`     | not     |
+
+
+
+Don't do this: 
+
+```
+filter(flights, month = 1)
+filter(flights,month == 11 | 12)
+```
+
+Do this: 
+
+```
+filter(flights, month == 11) 
+
+filter(flights, month == 11 | month == 12)
+
+nov_dec <- filter(flights, month %in% c(11, 12))
+
+```
+
+### Missing values
+
+Often we will enounter missing values, or `NA`s (“not availables”). `NA` represents an unknown value so missing values are “contagious”: almost  any operation involving an unknown value will also be unknown.
+
+```{r}
+NA > 5
+10 == NA
+NA + 10
+NA / 2
+
+```
+
+If you want to determine if a value is missing, use `is.na()`:
+
+```{r}
+x <-5
+is.na(x)
+
+```
+
+
+
+---
+
+
+
+[^1]: The full documentation is available [here](https://www.rdocumentation.org/packages/gapminder/versions/0.3.0)
+
+ 
+
