@@ -1,7 +1,7 @@
 ---
 title: "EC137"
 author: "Emily Beam"
-date: "2/16/2021"
+
 output: html_document
 ---
 
