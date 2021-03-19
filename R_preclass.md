@@ -123,7 +123,7 @@ Complete these four primers:
 3. [Bar charts](https://rstudio.cloud/learn/primers/3.2)
 4. [Histograms](https://rstudio.cloud/learn/primers/3.3)
 
-The remaining instructions are available here: [R_0802_template.html](R_0802_template.html) You'll want to download the following template and open it in RStudio: [R_0802_template.Rmd](R_0802_template.Rmd)
+The remaining instructions are available here: [R_0801_pc_template.html](R_0801_pc_template.html) You'll want to download the following template and open it in RStudio: [R_0801_pc_template.Rmd](R_0801_template.Rmd)
 
 #### Advanced user? 
 
