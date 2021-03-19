@@ -7,7 +7,6 @@ output:
   word_document: default
 ---
 
-# Pre-class activity (08-01)
 
 Let's start graphing! 
 
@@ -47,20 +46,10 @@ Recreate your code to complete the two challenges at the end of the "Derive Info
 ```{r}
 
 # How many distinct boys names acheived a rank of Number 1 in any year?
-babynames %>% 
-  group_by(year, sex) %>% 
-  mutate(rank = min_rank(desc(n))) %>% 
-  filter(rank == 1, sex == "M") %>% 
-  ungroup() %>% 
-  summarise(distinct = n_distinct(name))
+
 
 # How many distinct girls names acheived a rank of Number 1 in any year?
-babynames %>% 
-  group_by(year, sex) %>% 
-  mutate(rank = min_rank(desc(n))) %>% 
-  filter(rank == 1, sex == "F") %>% 
-  ungroup() %>% 
-  summarise(distinct = n_distinct(name))
+
 ```
 
 ### Results from "Bar Charts"
@@ -71,8 +60,7 @@ Recreate your code to complete Exercise 5 in "Bar Charts" (subsection "Aesthetic
 
 ```{r}
 # Put your code here! Make sure it runs
-ggplot(data = mpg) +
-  geom_bar(mapping = aes(x = class, fill = class))
+
 
 ```
 
@@ -89,9 +77,6 @@ Recreate your code to complete Exercise 5 in "Histograms" (subsection "Histogram
 ```{r}
 # Put your code here! Make sure it runs
 
-
-ggplot(data = diamonds) +
-  geom_histogram(mapping = aes(x = price, fill = cut), binwidth = 1000, boundary = 0)
 
 ```
 
