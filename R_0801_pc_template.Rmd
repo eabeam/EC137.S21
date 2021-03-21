@@ -72,7 +72,7 @@ Recreate your code to complete Exercise 5 in "Histograms" (subsection "Histogram
 
 > Recreate the histogram below.
 >
-> <img src="images/histogram-5-1.png" alt="histogram-5-1" style="zoom:33%;" />
+<!-- > <img src="images/histogram-5-1.png" alt="histogram-5-1" style="zoom:33%;" /> -->
 
 ```{r}
 # Put your code here! Make sure it runs
