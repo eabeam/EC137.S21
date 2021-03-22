@@ -28,7 +28,19 @@ Office Hours: Tuesday 1-2pm; Thursday 9-10am
 
 
 
-## [Pre-class activities](R_preclass.html)
+## Pre-class activities
+
+See all pre-class activities for the R unit [here](R_preclass.html)
+
+
+
+## Exercises
+
+[Exercise 03](03-exercise.html) - Due March 28 @ 11:59pm
+
+Exercise 04 - Due April 11 @ 11:59pm 
+
+
 
 
 
@@ -57,8 +69,9 @@ Office Hours: Tuesday 1-2pm; Thursday 9-10am
 | ---           | [In-class: 07-02 template](Lesson_0702_inclass.Rmd)          |
 | **Resources** | [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) |
 
-
 ### Week 8  Data visualization in R
+
+**[Exercise 03](03-exercise.html) due at the end of the week!**
 
 #### 08-01 Introduction to ggplot2
 
@@ -114,9 +127,9 @@ Office Hours: Tuesday 1-2pm; Thursday 9-10am
 
 [COMP/STAT 112: Introductory Data Science](COMP/STAT 112: Introductory Data Science) Tutorials from a course at Macalester put together by [Lisa Lendway](https://lisalendway.netlify.app/)
 
-
-
 [Openscapes](https://www.openscapes.org/blog/2020/10/12/tidy-data/): I struggle to describe what this is. But, it is wonderful.
+
+
 
 #### `ggplot`
 
@@ -138,15 +151,15 @@ ggplot2tor: [A complete guide to scales](https://ggplot2tor.com/scales/)
 
 ## Unit 3 - Tableau 
 
-
+TBD
 
 
 
 ## Archive
 
-### 
 
-### [Excel Emergency Kit](excel-emergency.html)
+
+[Excel Emergency Kit](excel-emergency.html)
 
 
 

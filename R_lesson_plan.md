@@ -71,11 +71,35 @@ https://datavizm20.classes.andrewheiss.com/assignment/08-exercise/#task-3-slopeg
 
 
 
+## Advanced Users
+
+In lieu of the above assignment, you can do the following: 
+
+Sign up for a procedure/package here. 
+
+Create a simple working demonstration of the package or produre 
+
+Create a short video in which you "demo" the package, providing clear explanation to relatively new users about how to utilize the package. 
+
+Upload the demonstration code, output file (pdf/html), and link to the video. I'll share these on blackboard as resources for your classmates!
+
+Ideally, you would use data that might be relevant to our class - I would recommend [`blscrapeR`](https://github.com/keberwein/blscrapeR); [`wdi`](https://cran.r-project.org/web/packages/WDI/WDI.pdf), or our TidyTuesday data 
+
+Possibilities: 
+
+- Create a choloropleth map using ggplot2 
+- Add [annotations](https://ggplot2.tidyverse.org/reference/annotate.html) to a plot using `annotate()`
+- 
+- 
+- 
+
 ## 08.01 Graphics, part III 
 
 
 
 ## 08.02 Policy brief
+
+
 
 ## 09.01 Inequality
 
