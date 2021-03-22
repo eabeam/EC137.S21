@@ -1,0 +1,221 @@
+---
+title: "08-01 Introduction to ggplot"
+author: "Emily Beam"
+
+output: html_document
+---
+
+
+To make this chunk run, you will need to point the file path in the right direction. 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)   # For nice labels in charts
+
+births_1994_1999 <- read_csv("../../data/US_births_1994-2003_CDC_NCHS.csv") %>% 
+  
+  # Ignore anything after 2000
+  filter(year < 2000)
+
+births_2000_2014 <- read_csv("../../data/US_births_2000-2014_SSA.csv")
+
+## What does this bind_rows command do? It appends the data! Oooh
+
+births_combined <- bind_rows(births_1994_1999, births_2000_2014)
+```
+
+
+What do we see here. Things look okay, but usually we don't think of days of the week and months as numbers. We want to name them! 
+```{r}
+head(births_combined)
+```
+
+There are three things we are doing here:  
+
+1. Make list of names for months and days of the week 
+2. Make two new variables, `month` and `day_of_week` that are ordered factors. "Factors" just means they are categorical variable, and ordered means that one comes before another (we wouldn't want them in alphabetical order, for example) 
+3. Make a variable called weekend that equals 1 if it is Saturday/Sunday, and 0 otherwise. 
+```{r clean}
+# The c() function lets us make a list of values
+month_names <- c("January", "February", "March", "April", "May", "June", "July",
+                 "August", "September", "October", "November", "December")
+
+day_names <- c("Monday", "Tuesday", "Wednesday", 
+               "Thursday", "Friday", "Saturday", "Sunday")
+
+
+births <- births_combined %>% 
+  # Make month an ordered factor, using the month_name list as labels
+  mutate(month = factor(month, labels = month_names, ordered = TRUE)) %>% 
+  mutate(day_of_week = factor(day_of_week, labels = day_names, ordered = TRUE),
+         date_of_month_categorical = factor(date_of_month)) %>% 
+  # Add a column indicating if the day is on a weekend
+  mutate(weekend = ifelse(day_of_week %in% c("Saturday", "Sunday"), TRUE, FALSE))
+
+head(births)
+```
+If you look at the data now, you can see the columns are changed and have different types. year and date_of_month are still numbers, but month, and day_of_week are ordered factors (ord) and date_of_month_categorical is a regular factor (fct). Technically it’s also ordered, but because it’s already alphabetical (i.e. 2 naturally comes after 1), we don’t need to force it to be in the right order.
+
+Our births data is now clean and ready to go!
+
+See what happens when you delete and replace little bits of code: 
+
+ - What if you remove `guides(fill = FALSE)` (make sure you remove the + before it as well)
+ - What if you remove `fill = day_of_week`? (make sure you don't delete any parentheses)
+ - What if you switch the `x` and `y` variables? (note that x can come before or after y - it doesn't)
+
+```{r barplot}
+total_births_weekday <- births %>% 
+  group_by(day_of_week) %>% 
+  summarize(total = sum(births))
+
+ggplot(data = total_births_weekday,
+       mapping = aes(x = day_of_week, y = total, fill = day_of_week)) +
+  geom_col() +
+  # Turn off the fill legend because it's redundant
+  guides(fill = FALSE)
+```
+
+
+
+```{r barplot-colors}
+total_births_weekday <- births %>% 
+  group_by(day_of_week) %>% 
+  summarize(total = sum(births)) %>% 
+  mutate(weekend = ifelse(day_of_week %in% c("Saturday", "Sunday"), TRUE, FALSE))
+
+ggplot(data = total_births_weekday,
+        mapping = aes(x = day_of_week, y = total, fill = weekend)) +
+  geom_col()
+```
+
+
+This graph makes three modifications: 
+- `scale_fill_manual()` - adds specific colors
+- `scale_y_continuous(labels = comma)` - gets away from scientific notation
+- `labs()` - add some labels 
+
+Currently they are commented out. Add them back in. Note that you need to connect them with a + in order to make it work, and the + has to be at the end of the line.
+```{r barplot-pretty}
+ggplot(data = total_births_weekday,
+       mapping = aes(x = day_of_week, y = total, fill = weekend)) +
+  geom_col() +
+  # Use grey and orange
+  #scale_fill_manual(values = c("grey70", "#f2ad22")) +
+  # Use commas instead of scientific notation
+  #scale_y_continuous(labels = comma) +
+  # Turn off the legend since the title shows what the orange is
+  guides(fill = FALSE) 
+  #labs(title = "Weekends are unpopular times for giving birth",
+  #     x = NULL, y = "Total births")
+```
+
+Here, we've brought in a new geom - `geom_pointrange`. You can make this look even better if you add in options to increase the size of the dots and width of the lines. Add options `fatten = 5, size = 1.5` after the comma: `geom_pointrange(aes(ymin = 0,ymax = total),PUT HERE)`. Feel free to play w/ the exact sizes.
+```{r lollipop}
+ggplot(data = total_births_weekday,
+       mapping = aes(x = day_of_week, y = total, color = weekend)) +
+  geom_pointrange(aes(ymin = 0, ymax = total), )+
+                  # Make the lines a little thicker and the dots a little bigger
+                  # fatten = 5, size = 1.5) +
+  # Use grey and orange
+  scale_color_manual(values = c("grey70", "#f2ad22")) +
+  # Use commas instead of scientific notation
+  scale_y_continuous(labels = comma) +
+  # Turn off the legend since the title shows what the orange is
+  guides(color = FALSE) +
+  labs(title = "Weekends are unpopular times for giving birth",
+       x = NULL, y = "Total births")
+```
+
+Now, let's make a cool strip plot. See what the `jitter` is doing by removing `position=position_jitter(height = 0)`. 
+```{r stripplot}
+ggplot(data = births,
+       mapping = aes(x = day_of_week, y = births, color = weekend)) +
+  scale_color_manual(values = c("grey70", "#f2ad22")) +
+  geom_point(size = 0.5, position = position_jitter(height = 0)) +
+  guides(color = FALSE)
+```
+
+To make a pretty version of a violin plot ("bee swarm"), you will need to install the package `ggbswarm` (see in code). Once you install it, comment it back out.
+```{r beeswarm}
+#install.packages("ggbeeswarm")
+library(ggbeeswarm)
+
+ggplot(data = births,
+       mapping = aes(x = day_of_week, y = births, color = weekend)) +
+  scale_color_manual(values = c("grey70", "#f2ad22")) +
+  # Make these points suuuper tiny
+  geom_quasirandom(size = 0.0001) +
+  guides(color = FALSE)
+```
+
+
+Now, let's make a heat map! 
+
+Look closely at what we're doing 
+1. Generating a data frame that summarizes average births per day over the entire period
+2. Plotting average births as the fill using `geom_tile`. 
+```{r heatmap}
+avg_births_month_day <- births %>% 
+  group_by(month, date_of_month_categorical) %>% 
+  summarize(avg_births = mean(births))
+
+ggplot(data = avg_births_month_day,
+       # By default, the y-axis will have December at the top, so use fct_rev() to reverse it
+       mapping = aes(x = date_of_month_categorical, y = fct_rev(month), fill = avg_births)) +
+  geom_tile() +
+  # Add nice labels
+  labs(x = "Day of the month", y = NULL,
+       title = "Average births per day",
+       subtitle = "1994-2014",
+       fill = "Average births") +
+  # Force all the tiles to have equal widths and heights
+  coord_equal() +
+  # Use a cleaner theme
+  theme_minimal()
+```
+
+
+## Your turn! 
+
+### Set-up
+1. Head to your groups 
+2. Make sure you can run all the code. Remember you can select "Run All" to run from top to bottom. You may need to install a package or two. 
+
+### Now, let's play a little bit and get more comfortable 
+1. Work through the questions above. 
+1. See the `labs` command we use in the heatmap? Add a set of labels to unlabelled graphs that include the following
+  - Title 
+  - Subtitle 
+  - Nice y-axis title
+  - Nice x-axis title 
+
+*Nice that we don't have to recreate the entire graph again, right? We can just edit within what we already have*
+
+2. Let's suppose we want to see how much variation there is in December births. Make a histogram that shows the distribution of births in December. I've given some hints in the comments
+
+```{r histogram here}
+# You'll want to use this form 
+## births %>% then filter(STUFF) %>% then start your ggplot commands. You don't need to do any additional data cleaning
+
+## For your ggplot, you'll want to use geom_histogram()
+
+
+```
+
+3. What happens if we add a "fill" to our histogram? Create a new graph that includes `fill=day_of_week` in your aes mapping. What is being plotted now? 
+
+4. *(If you have time)* What if we want to make a bar chart of total number of births per year? You can do this in a way similar to the `barplot` chunk above, but you'll want to group by year. 
+
+```{r}
+births_total = births %>% 
+  group_by(year) %>% 
+  summarize(total = sum(births))
+
+# Now, add a bar chart 
+
+```
+
+5. Once you've got that running, can you make it into a line chart? Just swap out `geom_col` with `geom_line`! Wow, that is a lot clearer!
+

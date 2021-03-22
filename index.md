@@ -75,13 +75,13 @@ Exercise 04 - Due April 11 @ 11:59pm
 
 #### 08-01 Introduction to ggplot2
 
-| Element       | Activity                                                     |
-| ------------- | ------------------------------------------------------------ |
-| **Pre-class** | Complete [08-01 pre-class activity.](R_preclass.html)        |
-| **Lesson**    | 08-01 Introduction to ggplot2                                |
-| **Downloads** | [PC: 08-01 template](R_0801_pc_template.html)                |
-| ---           | In-class: 08-01 template                                     |
-| **Resources** | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
+| Element               | Activity                                                     |
+| --------------------- | ------------------------------------------------------------ |
+| **Pre-class**         | Complete [08-01 pre-class activity](R_preclass.html) <br>[PC: 08-01 template,Rmd](R_0801_pc_template.Rmd) |
+| **Lesson**            | **Template**: [08-01 Introduction to ggplot2.Rmd](08-01-lesson-gapminder.Rmd) <br>**Output**: [08-01 Introduction to ggplot2.html](08-01-lesson-gapminder.html) |
+|                       |                                                              |
+| **In-class activity** | In-class: [08-01 template.Rmd](08-01-lesson.Rmd) <br>[08-01 template.html](08-01-lesson.html) |
+| **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
 
 
@@ -104,6 +104,10 @@ Exercise 04 - Due April 11 @ 11:59pm
 
 
 ## R References
+
+## EC137 Resources
+
+[R Troubleshooting](r-troubleshooting.html)
 
 #### Quick R Guides
 
