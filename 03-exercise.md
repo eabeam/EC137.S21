@@ -31,6 +31,8 @@ You’ll need to download one CSV file and put it somewhere on your computer or 
 
 - [`EssentialConstruction.csv`](EssentialConstruction.csv)
 
+*You may need to right-click and select "Download linked file" if you find that clicking on this link opens a window of incomprehensible text.*
+
 To help you, I’ve created a skeleton R Markdown file with a template  for this exercise, along with some code to help you clean and summarize  the data. Download that here and include it in your project:
 
 - [`03_exercise_template.Rmd`](03_exercise_template.Rmd)
@@ -65,7 +67,7 @@ You’ll need to insert your own code chunks where needed. Rather than  typing t
 
 ### Part 2: Reflection
 
-At the bottom of your document, answer the following two questions: 
+At the bottom of your document, answer the following **four** questions: 
 
 - Briefly explain what each plot shows
 - What design decisions did you make, and why?
