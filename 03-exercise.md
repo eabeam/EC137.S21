@@ -33,7 +33,7 @@ You’ll need to download one CSV file and put it somewhere on your computer or 
 
 To help you, I’ve created a skeleton R Markdown file with a template  for this exercise, along with some code to help you clean and summarize  the data. Download that here and include it in your project:
 
-- [`03_exercise_template.Rmd`](03_exercise_template)
+- [`03_exercise_template.Rmd`](03_exercise_template.Rmd)
 
 In the end, the structure of your project directory should look something like this:
 
@@ -76,7 +76,7 @@ At the bottom of your document, answer the following two questions:
 
 ### Part 3: Turning everything in
 
-When you’re all done, click on the “Knit” button at the top of the  editing window and create an HTML or Word version (or PDF if you’ve [installed **tinytex**](https://datavizm20.classes.andrewheiss.com/resource/install/#install-tinytex)) of your document. Upload that file to Blackboard.
+When you’re all done, click on the “Knit” button at the top of the  editing window and create an HTML or Word version (or PDF if you’ve installed tinytex) of your document. Upload that file to Blackboard.
 
 There will be a quick "quiz" on BB. Again, if you're working with a buddy, one quiz can apply to both people. 
 
