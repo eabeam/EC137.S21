@@ -153,7 +153,7 @@ Finally, knit this document to Word, html, or PDF and upload into Blackboard.
 
 
 
-## PC March 23 - `ggplot2` - the return!
+## PC March 25 - `ggplot2` - the return!
 
 ### Assignment
 

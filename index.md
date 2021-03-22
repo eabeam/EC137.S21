@@ -79,7 +79,7 @@ Exercise 04 - Due April 11 @ 11:59pm
 | ------------- | ------------------------------------------------------------ |
 | **Pre-class** | Complete [08-01 pre-class activity.](R_preclass.html)        |
 | **Lesson**    | 08-01 Introduction to ggplot2                                |
-| **Downloads** | [PC: 08-01 template](R_0801_template.Rmd)                    |
+| **Downloads** | [PC: 08-01 template](R_0801_pc_template.html)                |
 | ---           | In-class: 08-01 template                                     |
 | **Resources** | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
