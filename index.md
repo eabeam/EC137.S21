@@ -78,8 +78,8 @@ Exercise 04 - Due April 11 @ 11:59pm
 | Element               | Activity                                                     |
 | --------------------- | ------------------------------------------------------------ |
 | **Pre-class**         | Complete [08-01 pre-class activity](R_preclass.html) <br>[PC: 08-01 template,Rmd](R_0801_pc_template.Rmd) |
-| **Lesson**            | **Template**: [08-01 Introduction to ggplot2.Rmd](08-01-lesson-gapminder.Rmd) <br>**Output**: [08-01 Introduction to ggplot2.html](08-01-lesson-gapminder.html) |
-|                       |                                                              |
+| **Lesson**            | [Slides](slides/LectureSlides-08-01.pptx)                    |
+|                       | **Template**: [08-01 Introduction to ggplot2.Rmd](08-01-lesson-gapminder.Rmd) <br/>**Output**: [08-01 Introduction to ggplot2.html](08-01-lesson-gapminder.html) |
 | **In-class activity** | In-class: [08-01 template.Rmd](08-01-lesson.Rmd) <br>[08-01 template.html](08-01-lesson.html) |
 | **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
@@ -87,13 +87,13 @@ Exercise 04 - Due April 11 @ 11:59pm
 
 #### 08-02 Using ggplot2
 
-| Element       | Activity                                                     |
-| ------------- | ------------------------------------------------------------ |
-| **Pre-class** | Complete [08-02 pre-class activity.](R_preclass.html) *TB D* |
-| **Lesson**    | 08-02 Introduction to ggplot2                                |
-| **Downloads** | PC: 08-02 template                                           |
-| ---           | In-class: 08-02 template                                     |
-| **Resources** | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
+| Element               | Activity                                                     |
+| --------------------- | ------------------------------------------------------------ |
+| **Pre-class**         | Complete [08-02 pre-class activity.](R_preclass.html) ***TBD*** |
+| **Lesson**            | 08-02 Introduction to ggplot2                                |
+| **In-class activity** | TBD                                                          |
+| ---                   |                                                              |
+| **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
 
 
