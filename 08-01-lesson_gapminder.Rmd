@@ -1,0 +1,98 @@
+---
+title: "Intro_ggplot"
+author: "Emily Beam"
+date: "3/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library(gapminder)
+library(tidyverse)
+gapminder_2007 <- gapminder %>% filter(year == 2007)
+gapminder_2007
+```
+
+
+```{r}
+ggplot(data = gapminder) +
+  geom_point(mapping = aes(x= gdpPercap,
+                y = lifeExp))
+
+ggplot(data = gapminder, mapping = aes(x=gdpPercap, y = lifeExp)) +
+  geom_point()
+
+gapminder %>% 
+ggplot(aes(x= gdpPercap, y = lifeExp)) +
+  geom_point()
+
+
+
+```
+
+```{r}
+ggplot(data = gapminder_2007,
+  mapping = aes(x = gdpPercap,
+                y = lifeExp, 
+                color=continent,
+                size=pop)) + 
+  geom_point() + 
+  scale_x_log10()
+
+```
+
+```{r}
+ggplot(data = gapminder_2007,
+  mapping = aes(x = gdpPercap,
+                y = lifeExp, 
+                color=continent,
+                size=pop)) + 
+  geom_point() + 
+  scale_x_log10() + 
+  scale_color_viridis_d()
+```
+
+```{r}
+ggplot(data = gapminder_2007,
+  mapping = aes(x = gdpPercap,
+                y = lifeExp, 
+                color=continent,
+                size=pop)) + 
+  geom_point() + 
+  scale_x_log10() + 
+  facet_wrap(vars(continent))
+```
+
+```{r}
+ggplot(data = gapminder_2007,
+  mapping = aes(x = gdpPercap,
+                y = lifeExp, 
+                color=continent,
+                size=pop)) + 
+  geom_point() + 
+  scale_x_log10() +
+  labs(title = "Health and income are positively correlated", 
+       subtitle = "2007 data", 
+       x = "Income (GDP/capita",
+       y = "Health (life expectancy)",
+       color = "Continent",
+       size = "Population",
+       caption = "Source: The Gapminder Project")
+```
+
+
+```{r}
+ggplot(data = gapminder_2007,
+  mapping = aes(x = gdpPercap,
+                y = lifeExp, 
+                color=continent,
+                size=pop)) + 
+  geom_point() + 
+  scale_x_log10() +
+  theme_dark()
+```
