@@ -164,9 +164,9 @@ Complete the following tutorials:
 3. [Line plots](https://rstudio.cloud/learn/primers/3.6)
 4. [Customize plots](https://rstudio.cloud/learn/primers/3.8)
 
-Then, download and work through the pre-class template here: [R_0902_pc_template.Rmd](R_0902_pc_template.Rmd). 
+Then, download and work through the pre-class template here: [R_0901_pc_template.Rmd](R_0901_pc_template.Rmd). 
 
-You can find the html version as well: [R_0902_pc_template.html](R_0902_pc_template.html).
+You can find the html version as well: [R_0901_pc_template.html](R_0901_pc_template.html).
 
 #### Advanced user? 
 
