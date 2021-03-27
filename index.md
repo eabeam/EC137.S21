@@ -1,10 +1,11 @@
-# EC137: Using Data for Economic Policy 
+---
+title: "EC137: Using Data for Economic Policy"
+author: "Emily Beam"
 
-Instructor: Emily Beam
+output: html_document
+---
 
-E-mail: emily.beam@uvm.edu
-
-Office Hours: Tuesday 1-2pm; Thursday 9-10am
+# 
 
 
 
@@ -20,35 +21,55 @@ Office Hours: Tuesday 1-2pm; Thursday 9-10am
 
 ---
 
+# Pre-class activities
+
+See all pre-class activities for the R unit [here](R_preclass.html)
+
+
+
+# Exercises
+
+[Exercise 03](03-exercise.html) - Due April 04 @ 11:59pm
+
+Exercise 04 - Due April 18 @ 11:59pm 
+
+Exercise 05 - Due May 02 @ 11:59pm 
+
+# Capstones
+
+
+
+## Capstone 2
+
+April 18 (Sun): Optional rough draft due
+
+April 20 (T): Project showcase
+
+April 25 (Sun): Capstone 2 due
+
+
+
+## Capstone 3
+
+May 9 (Sun): Optional rough draft due 
+
+May 11 (T): Project showcase
+
+May 16 (Sun): Capstone 3 due
+
+
+
+
+
 
 
 # Unit 2 - R 
 
 
 
+## Week 7
 
-
-## Pre-class activities
-
-See all pre-class activities for the R unit [here](R_preclass.html)
-
-
-
-## Exercises
-
-[Exercise 03](03-exercise.html) - Due March 28 @ 11:59pm
-
-Exercise 04 - Due April 11 @ 11:59pm 
-
-
-
-
-
-## Schedule
-
-### Week 7
-
-#### 07-01: Introduction to R
+### {07-01} 03/16 Introduction to R
 
 | Element       | Activity                                                     |
 | ------------- | ------------------------------------------------------------ |
@@ -59,7 +80,7 @@ Exercise 04 - Due April 11 @ 11:59pm
 
 
 
-#### 07-02 Introduction to `dplyr`
+### {07-02} 03/18 Introduction to `dplyr`
 
 | Element       | Activity                                                     |
 | ------------- | ------------------------------------------------------------ |
@@ -69,11 +90,11 @@ Exercise 04 - Due April 11 @ 11:59pm
 | ---           | [In-class: 07-02 template](Lesson_0702_inclass.Rmd)          |
 | **Resources** | [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) |
 
-### Week 8  Data visualization in R
+## Week 8  Data visualization in R
 
-**[Exercise 03](03-exercise.html) due at the end of the week!**
 
-#### 08-01 Introduction to ggplot2
+
+### {08-01} 03/23 Introduction to ggplot2
 
 | Element               | Activity                                                     |
 | --------------------- | ------------------------------------------------------------ |
@@ -83,33 +104,186 @@ Exercise 04 - Due April 11 @ 11:59pm
 | **In-class activity** | In-class: [08-01 template.Rmd](08-01-lesson.Rmd) <br>[08-01 template.html](08-01-lesson.html) |
 | **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
+### ~~{08-02} 03/25 Cancelled~~
 
 
-#### 08-02 Using ggplot2
+
+## Week 9 Inequality
+
+**[Exercise 03](03-exercise.html) due at the end of the week!**
+
+### {09-01} 03/30 Fun with `{ggplot2}`
 
 | Element               | Activity                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| **Pre-class**         | Complete [08-02 pre-class activity.](R_preclass.html) ***TBD*** |
-| **Lesson**            | 08-02 Introduction to ggplot2                                |
+| **Pre-class**         | Complete [09-01 pre-class activity.](R_preclass.html)<br/>Template: [R_0901_pc_template.Rmd](R_0901_pc_template.Rmd) |
+| **Lesson**            | 09-01 Fun with `{ggplot2}`                                   |
 | **In-class activity** | TBD                                                          |
 | ---                   |                                                              |
 | **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
 
 
 
-### Week 9 Inequality
+### {09-02} 04/01 Definitions of inequality
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-econ.org/espp/book/text/05.html#59-measuring-economic-inequality) |
+|                       | Complete | Complete 09-02 pre-class activity on Blackboard (it will involve https://dart.lisdatacenter.org/dart) |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+## Week 10 - Inequality
+
+### {10-01} 04/06 Trends in inequality 
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020 |
+|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+### {10-02} 04/08 Intergenerational mobility
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020 |
+|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+### 
+
+## Week 11 - Inequality
+
+**Exercise 04 due at the end of the week!**
+
+### {11-01} 04/13 Impact of policy on inequality
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | D. Hamilton and W. Darity, Jr. (2010). Can ‘Baby Bonds’ Eliminate the Racial Wealth Gap in Putative Post-Racial America? *Review of Black Political Economy*, 37(3,4):207-216. |
+|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+### ~~{11-02} 04/15 No class - respite day~~
+
+## Week 12 - Capstone
+
+### {12-01} 04/20 Project showcase
+
+Submit your draft slides on Blackboard before class
+
+### {12-02} 04/22 Policy writing workshop
+
+We'll cover the art of policy writing to gear up for the final capstone
+
+
+
+# Unit 3: Putting it all together
+
+## Week 13 - Higher education
+
+**Exercise 05 due at the end of the week!**
+
+### {13-01} 04/27 Returns to education
+
+
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | **(p10)** Webber, Douglas. [“Is the Return to Education the Same for Everybody?](https://wol.iza.org/articles/is-the-return-to-education-the-same-for-everybody/long)” *IZA World of Labor*, October 1, 2014. *Read the "long"* version! |
+|                       | Complete | Answer reading response questions on Blackboard              |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+### {13-02} 04/29 Overview of student debt
+
+
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | Carey, K. ["What about tackling the causes of student debt?](https://www.nytimes.com/2020/11/18/upshot/student-debt-forgiveness-biden.html) *The New York Times.* 18 November 2020. |
+|                       |          | **(8p)** Fry, R. ["The changing profile of student borrowers."](https://www.pewresearch.org/social-trends/2014/10/07/the-changing-profile-of-student-borrowers/) Pew Research Center. 07 Oct 2014. |
+|                       |          | **(3p)** Dynarski, S. ["Student Debt"](https://inequality.stanford.edu/sites/default/files/Pathways_SOTU_2019_StudentDebt.pdf) *The Poverty and Inequality Report 2019* |
+|                       | Complete | Download the data from the chart in the NYT article by clicking on the source (it's a `.csv` file, so you may need to right click --> save link as). Using R or Excel, recreate the chart but adjust it for inflation. Make it pretty |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
 
 
 
 
 
-## R References
+## Week 14 - Student debt
+
+### {14-01} 05/04 Impacts of student debt
+
+
+
+| ---                   | ---                 |                                                              |
+| --------------------- | ------------------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read                | Black, Sandra, Amy Filipek, Jason Furman, Laura Giuliano, and Ayushi Narayan. “Student Loans and College Quality: Effects on Borrowers and the Economy.” *VoxEU.Org* (blog), August 4, 2016. https://voxeu.org/article/student-loans-and-college-quality-effects-borrowers-and-economy. |
+|                       | Complete            |                                                              |
+|                       | *Optional readings* | Elliot, W. and Nam, I. ["Is student debt jeopardizing the short-term financial health of US households?"](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.2486&rep=rep1&type=pdf) *Federal Reserve Bank of St Louis Review.* September/October 2013. |
+| **Lesson**            |                     |                                                              |
+| **In-class activity** |                     |                                                              |
+
+
+
+### 
+
+### {14-02} 05/06 Student debt reform
+
+
+
+| ---                   | ---      |                                                              |
+| --------------------- | -------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read     | **(10p)** Chapman**, Bruce. [“Income Contingent Loans in Higher Education Financing.”](https://wol.iza.org/articles/income-contingent-loans-in-higher-education-financing/long) *IZA World of Labor*, February 1, 2016. *(read the "long" version!)* |
+|                       | Complete |                                                              |
+| **Lesson**            |          |                                                              |
+| **In-class activity** |          |                                                              |
+
+
+
+### 
+
+## Week 15 - Conclusion
+
+### {15-01} 05/11 Project showcase 
+
+Our lass class! :sob:
+
+
+
+| ---                   | ---  |                                 |
+| --------------------- | ---- | ------------------------------- |
+| **Pre-class**         |      | Prepare your policy brief draft |
+| **Lesson**            |      |                                 |
+| **In-class activity** |      |                                 |
+
+
+
+### 
+
+# R References
 
 ## EC137 Resources
 
 [R Troubleshooting](r-troubleshooting.html)
 
-#### Quick R Guides
+## Quick R Guides
 
 - [R cheat sheet](resources/R/r-cheat-sheet-3.pdf)
 - [RStudio cheat sheet](resources/R/rstudio-ide.pdf)
@@ -117,7 +291,7 @@ Exercise 04 - Due April 11 @ 11:59pm
 - [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) 
 - [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 
-#### General R Instruction
+## General R Instruction
 
 [**R for Data Science**](https://r4ds.had.co.nz/): A free online book for learning the basics of R and the tidyverse.
 
@@ -135,7 +309,7 @@ Exercise 04 - Due April 11 @ 11:59pm
 
 
 
-#### `ggplot`
+## `ggplot2`
 
 ggplot2tor[: step-by-step tutorials](https://ggplot2tor.com/) to highlight specific things you can do in ggplot!
 
@@ -153,9 +327,7 @@ ggplot2tor: [A complete guide to scales](https://ggplot2tor.com/scales/)
 
 
 
-## Unit 3 - Tableau 
 
-TBD
 
 
 

@@ -153,7 +153,7 @@ Finally, knit this document to Word, html, or PDF and upload into Blackboard.
 
 
 
-## PC March 25 - `ggplot2` - the return!
+## PC March 30 - `ggplot2` - the return!
 
 ### Assignment
 
@@ -164,7 +164,9 @@ Complete the following tutorials:
 3. [Line plots](https://rstudio.cloud/learn/primers/3.6)
 4. [Customize plots](https://rstudio.cloud/learn/primers/3.8)
 
-The remaining instructions are available here (TBD). You'll want to download the following template and open it in RStudio: (TBD)
+Then, download and work through the pre-class template here: [R_0902_pc_template.Rmd](R_0902_pc_template.Rmd). 
+
+You can find the html version as well: [R_0902_pc_template.html](R_0902_pc_template.html).
 
 #### Advanced user? 
 

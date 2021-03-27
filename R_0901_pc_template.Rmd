@@ -1,0 +1,105 @@
+---
+title: "Pre-Class Activity 08-02 Template"
+author: "Your Name Here"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+
+Today we make more graphs and we make them more pretty.
+
+A reminder: the goal here is *not* for you to be able to open a blank piece of paper and start writing long, elegant code straight from your brain. Even if you are expert coders, that is not particularly efficient. Rather, our goal is that by working through these activities, we learn (1) what the possibilities are; (b) build familiarity with how to work with them; and (c) create an  set of templates to draw from that you are already familiar with. 
+
+Start by changing your name above! You may want to change the title - it's not a template anymore!
+
+## Step 1: 
+
+Complete the following primers:
+
+1. (Optional) [Box plots and counts](https://rstudio.cloud/learn/primers/3.4): Coverage of additional graph types that are handy but not critical
+2. [Scatterplots](https://rstudio.cloud/learn/primers/3.5)
+3. [Line plots](https://rstudio.cloud/learn/primers/3.6)
+4. [Customize plots](https://rstudio.cloud/learn/primers/3.8)
+
+As before, I would recommend working through them both in the tutorial *and* in a separate .Rmd file on your computer - it will be  useful to have all the written examples together. 
+
+
+## Step 2: Show off your work! 
+
+Load all the libraries you need here, so you don't have to worry about it later on: 
+
+```{r include=FALSE}
+library(tidyverse)
+```
+
+
+
+### Results from "Scatterplots/Layers"
+
+Paste the code you used to create the plot for "global vs local data" section of the Layers section:the graph of engine displacement vs. highway mileage where just some points are highlighted red. 
+```{r}
+
+
+
+```
+
+Using the `last_plot()` command to call the previous graph, add the title "Sports cars have bad gas mileage." (or whatever title you like better)
+```{r}
+
+
+
+```
+
+
+### Results from "Line Plots and Maps / Similar Geoms" "
+
+Recreate your code to complete Review 3 in "Similar Geoms", where were make the cool area map of life expectancy across three countries in Asia that isn't all messed up: 
+```{r}
+
+```
+
+Using the `last_plot()` command to call the previous graph, add two layers: 
+1. A minimal theme, using `theme_minimal()`
+2. A different color palette, using `scale_fill_brewer(palette = "Spectral")`
+
+If "Spectral" isn't for you, you can explore other palettes [here](https://www.r-graph-gallery.com/38-rcolorbrewers-palettes) or by typing `RColorBrewer::display.brewer.all()` in the command window. The default is nice, but not interpretable for this type of plot
+```{r}
+
+```
+
+
+### Results from "Customizing your plots / Quiz" "
+
+Recreate your code from the Quiz at the end of Customizing your plots. You made a beautiful thing!
+```{r}
+# Put your code here! Make sure it runs
+
+
+```
+
+
+## Step 3: Reflection
+
+In this space, type your answer to the following prompts (no word limit): 
+
+- What is your favorite color palette so far? 
+
+- What is your favorite `geom` from this section? 
+
+- Were there any particular successes you had?
+
+- What are 2 questions you had or concepts you felt uncomfortable with?
+
+  
+
+## Step 4: Knit! 
+
+Finally, knit this document to Word, html, or PDF and upload into Blackboard. 
+
+- PDF: If you want to use PDF but are getting an error, install the `tinytex` package. This is a two-step process. Andrew Heiss provides the [clearest explanation.](https://datavizm20.classes.andrewheiss.com/resource/install/)
+- html: BB will only let you upload a html file if you compress it first! :cry:
+
+*Note:* If you get a weird error message about `Error in contrib.url(repos,"source")...` comment out the two lines that install your packages.
+

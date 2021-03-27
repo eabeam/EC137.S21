@@ -7,6 +7,19 @@ output: html_document
 
 
 To make this chunk run, you will need to point the file path in the right direction. 
+
+```{r}
+  births_1994_1999 <- read_csv("../../data/US_births_1994-2003_CDC_NCHS.csv") %>% 
+
+  
+```
+
+
+```{r}
+
+```
+
+  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -200,7 +213,11 @@ ggplot(data = avg_births_month_day,
 ## births %>% then filter(STUFF) %>% then start your ggplot commands. You don't need to do any additional data cleaning
 
 ## For your ggplot, you'll want to use geom_histogram()
-
+  
+births %>% filter(month == "December") %>%
+  ggplot( aes(x = births)) +
+  geom_histogram()
+ 
 
 ```
 

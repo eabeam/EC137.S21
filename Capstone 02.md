@@ -8,7 +8,15 @@ TLDR; Make something similar to what you did for Capstone 01, but do it with R. 
 
 ## Research questions
 
-You can create your own research question, or you can 
+
+
+
+
+
+
+
+
+ 
 
 ## Specifications
 
