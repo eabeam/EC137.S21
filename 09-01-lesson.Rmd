@@ -1,0 +1,183 @@
+---
+title: "09-01 Lesson"
+author: "Emily Beam"
+date: "03-30-2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gapminder)
+```
+
+## Gapminder 
+
+
+### The pipe %>% 
+```{r pipe}
+gapminder %>% 
+	filter(year == 2002) %>% 
+	mutate(log_gdpPercap = log(gdpPercap))
+
+```
+
+### `mutate()`
+
+```{r mutate}
+gapminder %>% 
+	 mutate(gdp = gdpPercap * 	pop,
+		pop_mill = round(pop / 1000000))
+
+```
+
+```{r ifelse}
+gapminder %>% 
+mutate(after_1960 = ifelse(year > 1960, TRUE, FALSE))
+
+gapminder %>% 
+mutate(after_1960 = ifelse(year > 1960, "After 1960", "Before 1960"))
+
+```
+
+### `summarize()` and `group_by()`
+
+```{r summarize}
+gapminder %>% summarize(mean_life = mean(lifeExp),
+                        min_life = min(lifeExp))
+
+```
+
+```{r groupby}
+gapminder %>% group_by(continent)
+
+```
+
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  summarize(n_countries = n_distinct(country),
+            avg_life_exp = mean(lifeExp)) 
+
+```
+
+
+## `ggplot2()`
+
+Many default themes: 
+
+
+```{r}
+  gdplifeplot <- gapminder %>% 
+    filter(year == "2007") %>% 
+    ggplot(mapping = aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) + 
+    geom_point() + 
+    scale_x_log10() + 
+    labs(title = "GDP per capita vs life expectancy",
+        subtitle = "2007",
+        caption = "Source: Gapminder data",
+        x = "GDP per capita", 
+        y = "Life expectancy",
+        color = "Continent",
+        size = "Population")
+```
+
+Add themes
+```{r}
+# default theme (theme_gray)
+gdplifeplot + theme_gray() 
+
+```
+
+```{r}
+gdplifeplot + theme_bw() 
+
+
+```
+
+```{r}
+gdplifeplot + theme_linedraw() 
+
+
+```
+
+```{r}
+gdplifeplot + theme_classic()
+
+```
+
+```{r}
+
+gdplifeplot + theme_minimal()
+
+
+```
+
+```{r}
+
+
+gdplifeplot + theme_light() 
+
+
+```
+
+
+```{r}
+gdplifeplot + theme_dark()
+```
+
+```{r}
+gdplifeplot + theme_void()
+```
+
+
+
+
+### Additional neat themes
+
+`ggthemes` package
+```{r}
+#install.packages("ggthemes")
+library(ggthemes)
+gdplifeplot + theme_economist()
+
+gdplifeplot + theme_tufte()
+
+```
+
+
+```{r}
+gdplifeplot + theme(axis.text.x = element_text(family = "mono", 
+    colour = "palevioletred"), panel.background = element_rect(fill = NA), 
+    legend.background = element_rect(fill = NA), 
+    legend.position = "top")
+```
+
+```{r}
+# Run commented codes if first time
+
+#install.packages("devtools")
+#devtools::install_github("gadenbuie/ggpomological")
+library(ggpomological)
+gdplifeplot + theme_pomological_fancy()
+```
+
+```{r}
+#install.packages("hrbrthemes")
+library(hrbrthemes)
+
+gdplifeplot + 
+  theme_ipsum_ps() 
+
+```
+```{r}
+ggsave(filename = "gdplifeplot.png", plot = gdplifeplot, width = 6, height = 4.5, units = "in")
+```
+
+
+```{r}
+library(evergreen)
+gdplifeplot + 
+  scale_color_manual(values = evergreen())
+```
+

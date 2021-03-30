@@ -117,10 +117,10 @@ May 16 (Sun): Capstone 3 due
 | Element               | Activity                                                     |
 | --------------------- | ------------------------------------------------------------ |
 | **Pre-class**         | Complete [09-01 pre-class activity.](R_preclass.html)<br/>Template: [R_0901_pc_template.Rmd](R_0901_pc_template.Rmd) |
-| **Lesson**            | 09-01 Fun with `{ggplot2}`                                   |
-| **In-class activity** | TBD                                                          |
+| **Lesson**            | 09-01 Fun with `{ggplot2}`<br> Slides: [LecturesSlides-09-01](slides/LecturesSlides-09-01.pptx)<br>Code: [09-01-lesson.Rmd](09-01-lesson.Rmd) |
+| **In-class activity** | [09-01-inclass.Rmd](09-01-inclass.Rmd) <br>[09-01-inclass.html](09-01-inclass.html) |
 | ---                   |                                                              |
-| **Resources**         | [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) |
+| **Resources**         | [`ggplot2` theme elements](https://henrywang.nl/ggplot2-theme-elements-demonstration/) - amazing graphic + demonstration<br>[Data wrangling cheat sheet ](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)(`dplyr`-based) |
 
 
 
@@ -289,6 +289,7 @@ Our lass class! :sob:
 - [RStudio cheat sheet](resources/R/rstudio-ide.pdf)
 - [RMarkdown cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - [`dplyr` cheat sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-transformation.pdf) 
+- [Data wrangling cheat sheet ](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)(`dplyr`-based)
 - [`ggplot2` cheat sheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 
 ## General R Instruction
@@ -309,13 +310,34 @@ Our lass class! :sob:
 
 
 
+## Topics we didn't cover
+
+
+
+See [Data Wrangling 2 slides](https://wilkelab.org/SDS375/slides/data-wrangling-2.html#1) by Claus O. Wilke
+
+- Merging data sets with `join_by()`
+
+- Reshaping data sets with `pivot_wider()` and `pivot_longer`
+
+See [Getting things in order](https://wilkelab.org/SDS375/slides/getting-things-in-order.html#1) by Cdlaus O. Wilke
+
+- Manually ordering bars with `fct_relevel()`
+- Work the the most common observations with `fct_infreq()`
+- Reverse order with `fct_rev()`
+- Lump factors together with `fct_lump_n()`
+
+Want to add linear or non-linear trendlines? We can do that. See [Visualizing trends](https://wilkelab.org/SDS375/slides/visualizing-trends.html).
+
+
+
 ## `ggplot2`
 
 ggplot2tor[: step-by-step tutorials](https://ggplot2tor.com/) to highlight specific things you can do in ggplot!
 
 ggplot2tor: [A complete guide to scales](https://ggplot2tor.com/scales/) 
 
-
+Henry Wang: [`ggplot2` theme elements](https://henrywang.nl/ggplot2-theme-elements-demonstration/) -  *amazing graphic + demonstration*
 
 ---
 

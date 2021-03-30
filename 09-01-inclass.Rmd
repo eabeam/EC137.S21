@@ -1,0 +1,136 @@
+---
+title: "09-01-inclass"
+author: "Emily Beam"
+date: "03-30-2021"
+output: html_document
+---
+
+
+## Set up
+
+Make sure to run this code once to load our items
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)  # For ggplot, dplyr, and friends
+library(gapminder)  # For gapminder data
+library(scales)     # For nice axis labels
+```
+
+## Create a new data set 
+
+Let's make a filtered data set that includes only two years, 2002 and 2007. Note how we save it to an object, `gapminder_filtered`
+
+```{r filtered data}
+# Make sure you ran the chunk above to load your libraries
+
+gapminder_filtered <- gapminder %>% 
+  filter(year > 2000)
+```
+
+
+## Make a base plot 
+
+```{r base_plot}
+## Start by making a facted plot 
+
+base_plot <- ggplot(data = gapminder_filtered,
+                    mapping = aes(x = gdpPercap, y = lifeExp, 
+                                  color = continent, size = pop)) +
+  geom_point() + 
+  facet_wrap(vars(year))
+
+base_plot
+
+```
+
+Now, fix the x-axis so it is logged gdpPercap. You will need a type of `scale()` function. Note that if you paste `labels = dollar_format(accuracy = 1)` inside the parentheses of your scale function, you can change how the dollar values are presented!
+
+```{r axis}
+
+base_plot <- base_plot + CODE HERE
+
+base_plot
+```
+
+What does this modification do? 
+```{r scale_label}
+
+base_plot <- base_plot + 
+  
+  scale_size_continuous(labels = comma)
+  
+base_plot
+```
+
+
+Let's adjust the color scale. Oceania is really hard to see! What can we do? We can exclude the top-most value of the range by adding `end = 0.9` to the `scale_color_viridis_d` option. Because it's a new option, make sure to separate by a comma. 
+
+Fix the color scale now:
+```{r color_scale}
+base_plot <- base_plot + 
+  # Use viridis
+  scale_color_viridis_d(option = "plasma") 
+
+base_plot
+
+
+
+
+```
+
+Now, let's add some labels: 
+
+Remember the generic form: 
+
+```{}
+labs(x = "XTITLE", y = "YTITLE",
+       `color = "COLOR LEGEND TITLE", size = "SIZE LEGENDTITLE",
+       `title = "TITLE",
+       `subtitle = "SUBTITLE",
+       caption = "CAPTION)
+```
+
+```{r labs}
+base_plot <- base_plot + 
+  labs(STUFFF)
+
+base_plot
+```
+
+
+## Optional  - play with `ggThemeAssist`
+
+If you're feeling adventurous, you can mess more with ggThemeAssist: 
+
+```{r ggtheme}
+#install.packages("ggThemeAssist")
+library(ggThemeAssist)
+
+base_plot
+
+# First, run this chunk to load the library 
+# Then, highlight base_plot. 
+# Then click on "Addins" and select "ggplot Theme Assistant"
+# Play! 
+# When you're done, check out the code you've created. 
+```
+
+
+
+## Export
+Finally, let's export it as a png file! 
+
+Remember the generic form : 
+```{}
+ggsave(filename = "NAME.png", plot = TITLE, width = 6, height = 4.5, units = "in")
+```
+
+
+```{r export}
+
+# Export to a png file
+```
+
+
+**Upload your *png file* to blackboard, and you're done!**

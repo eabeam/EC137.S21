@@ -54,3 +54,7 @@ Cap.ofZambales-NONRMTU |        139       13.72       13.72
 
 ```
 
+```
+Appendix Table A7 shows that compared with the full set of participants nationwide, we have comparable coverage of private-sector employers (6 percent in our sample versus 8 percent nationally), and we see that the majority of beneficiaries nationally also tend to work the minimum number of program days (73 percent in our sample versus 55 percent nationally). But, there are also some differences. Most importantly, our study can only speak to the impacts among first-time beneficiaries, who form 90 percent of the set of participants nationwide.  We also cannot speak to the impact of placements in private education institutions, which comprise 15 percent of national placements. Students who are placed with these schools are typically college-level students who work for much longer than those placed in government offices.\footnote{While disaggregated data on program characteristics by employer type is not available nationally, data from a selection of institutions shows that the median duration among students working at private education institutions was the program cap of 52 days}. As a result, our sample overrepresents relatively younger beneficiaries, with 81 percent of our sample being ages 15-18 versus 48 percent nationally. This comparison highlights that we should think of this study as most likely to be representative of the impact of the program for younger youth working in government and private-sector placements.
+```
+

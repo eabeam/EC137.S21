@@ -93,9 +93,45 @@ Possibilities:
 - 
 - 
 
-## 08.01 Graphics, part III 
+## 09.01 Graphics (*rescheduled 08-02*)
 
+1. Cover things that are confusing people: 
 
+   1. `mutate()`
+   2. `group_by()`
+   3. `ungroup()`
+
+   https://datavizm20.classes.andrewheiss.com/content/05-content/#slides
+
+2. Disuss aesthetics with `ggplot` and themes: 
+
+   1. Reviewing the standard `ggthemes`
+   2. Looking at custom theme packages others have used 
+   3. Creating and editing your own theme elements
+      1. Custom colors
+      2. Custom fonts
+   4. Saving and exporting plots with `ggsave`
+
+3. Importing data 
+
+   1. csv files
+
+   2. > ```
+      > library(readr)
+      > 
+      > data2 <- read_csv("C:\\Users\\Bob\\Desktop\\data.csv")
+      > 
+      > 
+      > library(data.table)
+      > 
+      > data3 <- fread("C:\\Users\\Bob\\Desktop\\data.csv")
+      > ```
+
+   3. excel files 
+
+   4. working with packages to get data 
+
+   5. 
 
 ## 08.02 Policy brief
 
@@ -105,11 +141,11 @@ Possibilities:
 
 Exercise 4: https://www.core-econ.org/doing-economics/book/text/05-03.html#part-52-measuring-other-kinds-of-inequality Just do this entire thing (EB write it out more specifically )
 
-
+https://datavizm20.classes.andrewheiss.com/example/08-example/ -- using WDI to analyze things - we coudl pick inequality data 
 
 Exercise 5: https://www.core-econ.org/doing-economics/book/text/12-03.html This one 
 
-
+Later on: Plotting with time: https://datavizm20.classes.andrewheiss.com/example/11-example/
 
 
 
@@ -119,4 +155,10 @@ Exercise 5: https://www.core-econ.org/doing-economics/book/text/12-03.html This 
 2. [Reshape data](https://rstudio.cloud/learn/primers/4.1)
 
 
+
+## 11 Intergenerational mobility 
+
+https://opportunityinsights.org/course/
+
+Find yourself
 
