@@ -195,3 +195,24 @@ Finally, knit this document to Word, html, or PDF and upload into Blackboard.
 
 
 
+## PC April 01  - Definitions of inequality 
+
+### Read
+
+Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-econ.org/espp/book/text/05.html#59-measuring-economic-inequality)
+
+### Complete
+
+1. Visit the [Data Access Research Tool](https://dart.lisdatacenter.org/dart) from the LIS. Note how you can visualize inequality data based on income or wealth across time for multiple high-income countries! 
+
+2. We're going to replicate a graph and think about the various measures of inequality with the power of R. Download this template and work through it [09-02-preclass.Rmd](09-02-preclass.Rmd)
+
+   ​	You can find the html version here as well: [09-02-preclass.html](09-02-preclass.html)
+
+3. Once you've finished, knit and upload to Blackboard.
+
+   
+
+   *No advanced user activities this week! But, you can always make your graphs as fancy as you like.*
+
+   

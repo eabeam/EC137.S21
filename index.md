@@ -129,7 +129,7 @@ May 16 (Sun): Capstone 3 due
 | ---                   | ---      |                                                              |
 | --------------------- | -------- | ------------------------------------------------------------ |
 | **Pre-class**         | Read     | Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-econ.org/espp/book/text/05.html#59-measuring-economic-inequality) |
-|                       | Complete | Complete 09-02 pre-class activity on Blackboard (it will involve https://dart.lisdatacenter.org/dart) |
+|                       | Complete | Complete [09-02 pre-class activity](R_preclass.html)<br>Template: [09-02-preclass.Rmd](09-02-preclass.Rmd)<br>html of template: [09-02-preclass.html](09-02-preclass.html) |
 | **Lesson**            |          |                                                              |
 | **In-class activity** |          |                                                              |
 

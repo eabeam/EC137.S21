@@ -1,0 +1,154 @@
+---
+title: "09-02 Pre-class activity"
+author: "Emily Beam"
+date: "3/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("janitor")
+# Run me first! 
+library(tidyverse)
+library(readxl)
+library(janitor)  # to help us quickly clean variable names
+```
+
+## Wealth and Income Inequality
+
+
+Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-econ.org/espp/book/text/05.html#59-measuring-economic-inequality)
+
+### Complete
+
+Visit the [Data Access Research Tool](https://dart.lisdatacenter.org/dart) from the LIS. Note how you can visualize inequality data based on income or wealth across time for multiple high-income countries! 
+
+
+1. On the main DART page, select "Income Data" and "Trends."  You'll see a line graph with lots of options! Make sure that you are looking at the "Equivalised Disposable Household Income," "Gini coefficeint," and "Trends."
+
+2. Adjust the country selection to include the United States plus 4-5 additional countries of your choosing. 
+
+3. Do you see the export button at the bottom right-hand corner of the page? Let's export it! Export as a table, which will save as a `.xlsx` file. Save that file (or move it) to your working directory for this document. 
+
+4. Now, it's time to import! 
+
+```{r import}
+
+#replace with your file name
+gini <- read_excel("dart-table_gini_1617151774650.xlsx")
+
+## Take a look at what this does. We are calling the `clean_names() command from the janitor package. Look how it adds an "x" to the variable names for our year. That's because R gets weirded out with variable names that start with a number, and it will make stuff hard later on. 
+
+gini <- janitor::clean_names(gini)
+
+
+gini
+```
+
+Wait, how do we plot this? Will this work? (Don't fix it, just note that this isn't good).
+
+```{r badplot}
+
+gini %>% 
+  ggplot(mapping = aes(x = countries, y = x1978)) + 
+  geom_line()
+```
+
+
+We could call this data "wide" That's because each year is spread across columns rather than rows. It looks wide! Wide data has many uses - good for computing the average gini coefficient by country, for example: 
+
+```{r making-a-thing}
+
+gini <- gini %>% rowwise() %>% 
+  mutate(average_gini = mean(c_across(x1978:x2018), na.rm = TRUE))
+
+gini$average_gini
+
+```
+
+What we want is one observation per country-year pair. That data would be considered "long" because it looks, well, long. There are a lot more observations this way! We can do this using the `pivot_long` function. 
+
+```{r reshape, message=FALSE, warning=FALSE}
+
+#Reshape command
+gini_long <- gini %>% pivot_longer(x1978:x2018,names_to="year",names_prefix="x",values_to="gini")
+
+# Year comes in as a string variable, let's make it a number
+gini_long <- type_convert(gini_long)
+
+gini_long
+
+
+```
+
+Now, let's make a line chart: 
+
+Why are there gaps? Because of the NA values. When there is a missing value (labeled as NA), R doesn't have anything to plot. So, it skips it. 
+
+```{r gap-plot, warning=FALSE}
+ggplot(data = gini_long, mapping = aes(x = year, y = gini, color = countries)) + 
+  geom_line()
+```
+
+What I've done here is told R to ignore the gaps. That is, for our data set, use the `gini_long` frame, but only include values that are *not* equal to NA in the `gini` column. 
+
+You can read it this way: 
+
+1. Use `gini_long`:  `ggplot( data = gini_long`, ...)`
+2. We want to exclude values that are *not* equal to NA, so recall that `!is.na` implies "not" equal to NA (`!` is "not"). 
+3. We want to exclude values that are NA only from the `gini` column, which we indicate with `gini_long$gini`
+
+Uniting these three concepts gives us this: `ggplot(data = gini_long[!is.na(gini_long$gini),], ...)`
+
+```{r filled-plot}
+
+  ggplot(data = gini_long[!is.na(gini_long$gini),], mapping = aes(x = year, y = gini, color=countries)) + 
+  geom_line()
+```
+
+This isn't best practice, because the reader cannot tell which data is real and which is not. What's a better strategy? Look below, I've made two different lines. The first line is the one with the gaps, and the second excludes the `NA` values I've changed the line type of the second one to be dotted, so we can tell them apart. Neat!
+
+```{r interpo-plot, warning=FALSE}
+
+ ggplot(data = gini_long, mapping = aes(x = year, y = gini, color=countries)) + 
+  geom_line() + 
+  geom_line(data = filter(gini_long, !is.na(gini_long$gini)), linetype = "dotted")
+```
+
+Ok, so that was neat. Now, what is your job? Actually, it's not too bad! 
+
+1. Save the above graph to an object, `gini_plot`
+2. In the code block below, edit your graph to make it prettier.  
+  a. Add a title/subtitle/caption
+  b. Add axis and legend labels
+  c. Apply a non-default theme - either a packaged one or edit your own
+  d. (Optional) If you're feeling a bit ambitious, incorporate the block at the bottom of this file to replace the legend with direct labels
+  
+3. Answer these questions (aim for 200-400 words total): 
+
+  a. What is the Gini coefficient for the most recent year of data in the United States? In words, what does it mean? 
+  
+  b. Based on this chart, how does income inequality in the United States compare to the other countries you included most recently and over time? Are these patterns relatively similar or different when considering a 90/10 percentile ratio? (You can check using DARTS, no need to download.)
+
+  b.  For this exercise, you plotted the Gini coefficient based on disposable income. Why is that important, and based on the readings, what you expect to be different if you used total income instead? 
+  
+  **Knit and upload!**
+  
+  
+```{r optional-labels, warning=FALSE}
+
+# You can also do this directly with annotations, but why not use a package!
+# install.packages("directlabels")
+ library(directlabels)
+  ggplot(data = gini_long, mapping = aes(x = year, y = gini, color=countries)) + 
+  geom_line() + 
+  geom_line(data = filter(gini_long, !is.na(gini_long$gini)), linetype = "dotted") + 
+  geom_dl(aes(label = countries), method = list("last.bumpup", cex = 0.5)) + 
+    scale_x_continuous(limits = c(1975, 2020)) + 
+    theme_minimal() + 
+   theme(legend.position ="none") 
+ 
+```
+  
+  
+  

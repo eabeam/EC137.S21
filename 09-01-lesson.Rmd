@@ -68,7 +68,7 @@ Many default themes:
 
 
 ```{r}
-  gdplifeplot <- gapminder %>% 
+ gdplifeplot <- gapminder %>% 
     filter(year == "2007") %>% 
     ggplot(mapping = aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) + 
     geom_point() + 
