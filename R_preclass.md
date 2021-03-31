@@ -207,7 +207,9 @@ Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-
 
 2. We're going to replicate a graph and think about the various measures of inequality with the power of R. Download this template and work through it [09-02-preclass.Rmd](09-02-preclass.Rmd)
 
-   ​	You can find the html version here as well: [09-02-preclass.html](09-02-preclass.html)
+   ​	You can find the html version here as well: [09-02-preclass.html.](09-02-preclass.html)
+
+   ​	*Note that you will need to download a `.xlsx`* file from DART. This should be straightforward :crossed_fingers:. In the event that it isn't, you can download the one I used [here](dart-table_gini_1617151774650.xlsx) as a last resort. 
 
 3. Once you've finished, knit and upload to Blackboard.
 
