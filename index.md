@@ -139,12 +139,15 @@ May 16 (Sun): Capstone 3 due
 
 ### {10-01} 04/06 Trends in inequality 
 
-| ---                   | ---      |                                                              |
-| --------------------- | -------- | ------------------------------------------------------------ |
-| **Pre-class**         | Read     | Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020 |
-|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
-| **Lesson**            |          |                                                              |
-| **In-class activity** |          |                                                              |
+**Note:** If you have issues w/ article limits and access to The New York Times, please remember that you can sign up for a [**free** digital subscription](https://library.uvm.edu/news/NYTsubscriptions) through UVM! :tada::tada::tada: Now you can geek out w/ the NYT for free all the time. :nerd_face:
+
+| ---                   | ---        |                                                              |
+| --------------------- | ---------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read       | New York Times "[Watch four decades of inequality drive American cities apart.](https://www.nytimes.com/2019/12/02/upshot/wealth-poverty-divide-american-cities.html)" 02 December 2019 <p></p> Kent, A., Ricketts, L., and Boshara, R. ["What wealth inequality in America looks like: facts and figures.](https://www.stlouisfed.org/open-vault/2019/august/wealth-inequality-in-america-facts-figures)" 14 August 2019 <p></p>Lowrey, A. "[The wealth gap in America is growing too](https://economix.blogs.nytimes.com/2014/04/02/the-wealth-gap-is-growing-too/)." *The New York Times,* 02 April 2014 |
+|                       | *Optional* | Abel, J. and Deitz, R. ["Why are some places so much more unequal than others?"](https://www.newyorkfed.org/medialibrary/media/research/epr/2019/epr_2019_wage-inequality_abel-deitz.pdf) Federal Reserve Bank of New York *Economic Policy Review,* 25.1 Decmeber 2019. <-- *This is the full article that informs the NYTimes piece, if you're interested!* <p></p> Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020 <p></p> [The America We Need](https://www.nytimes.com/interactive/2020/opinion/america-inequality-coronavirus.html?action=click&pgtype=Article&state=default&module=styln-opinion-inequality-series&region=TOP_BANNER&context=opinion_menu) *New York Times* interactive feature with heaps of articles on inequality, work, and cities in light of the pandemic. It's kind of amazing. <p></p> Saez, E. and Zucman, G. ["Wealth Inequality in the United States since 1913"](https://gabriel-zucman.eu/files/SaezZucman2014Slides.pdf) October 2014 <br>Slides from Saez and Zucman that forom the base of the 3rd assigned article. |
+|                       | Complete   | Answer 10-01 reflection questions on Blackboard (300-500 words) |
+| **Lesson**            |            |                                                              |
+| **In-class activity** |            |                                                              |
 
 
 

@@ -19,7 +19,7 @@ First we load and clean the data.
 library(tidyverse)
 
 # Load original data
-essential_raw <- read_csv("data/EssentialConstruction.csv")
+essential_raw <- read_csv("EssentialConstruction.csv")
 
 # Clean the data a little
 # Some of the borough names are in ALL CAPS, so we use str_to_title() to convert
@@ -29,15 +29,17 @@ essential <- essential_raw %>%
   mutate(BOROUGH = str_to_title(BOROUGH),
          BOROUGH = factor(BOROUGH),
          CATEGORY = factor(CATEGORY))
+
+
 ```
 
 ## Approved projects by borough
 
 Right now there's a row for each approved construction site. We need to condense that down to get counts of construction sites by different variables. We can do this by using `group_by()` and `summarize()`. You *don't* need to do anything with the data to make these two graphs.
 ```{r summarize-data-borough}
-essential_by_borough <- essential %>% 
+essential_by_borough <- essntial %>% 
   group_by(BOROUGH) %>% 
-  summarize(total = n()) %>% 
+  summarize(total == n()) %>% 
   mutate(proportion = total / sum(total))
 ```
 

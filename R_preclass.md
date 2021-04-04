@@ -218,3 +218,42 @@ Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-
    *No advanced user activities this week! But, you can always make your graphs as fancy as you like.*
 
    
+
+## PC April 05  - Trends in inequality 
+
+### Read  
+
+**Note:** If you have issues w/ article limits and access to The New York Times, please remember that you can sign up for a [**free** digital subscription](https://library.uvm.edu/news/NYTsubscriptions) through UVM! :tada::tada::tada: Now you can geek out w/ the NYT for free all the time. :nerd_face:
+
+Badger, E. and Quely, K. "[Watch four decades of inequality drive American cities apart.](https://www.nytimes.com/2019/12/02/upshot/wealth-poverty-divide-american-cities.html)" *The New York Times* 02 December 2019 (Updated 11 June 2020).
+
+Lowrey, A. "[The wealth gap in America is growing too](https://economix.blogs.nytimes.com/2014/04/02/the-wealth-gap-is-growing-too/)." *The New York Times,* 02 April 2014.   
+
+Kent, A., Ricketts, L., and Boshara, R. ["What wealth inequality in America looks like: facts and figures.](https://www.stlouisfed.org/open-vault/2019/august/wealth-inequality-in-america-facts-figures)" 14 August 2019
+
+####  *Optional*  
+
+- Abel, J. and Deitz, R. ["Why are some places so much more unequal than others?"](https://www.newyorkfed.org/medialibrary/media/research/epr/2019/epr_2019_wage-inequality_abel-deitz.pdf) Federal Reserve Bank of New York *Economic Policy Review,* 25.1 Decmeber 2019. <-- *This is the full article that informs the NYTimes piece, if you're interested!* 
+
+- Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020
+
+-  [The America We Need](https://www.nytimes.com/interactive/2020/opinion/america-inequality-coronavirus.html?action=click&pgtype=Article&state=default&module=styln-opinion-inequality-series&region=TOP_BANNER&context=opinion_menu) *New York Times* interactive feature with heaps of articles on inequality, work, and cities in light of the pandemic. It's kind of amazing. 
+
+- Saez, E. and Zucman, G. ["Wealth Inequality in the United States since 1913"](https://gabriel-zucman.eu/files/SaezZucman2014Slides.pdf) October 2014 <br>Slides from Saez and Zucman that forom the base of the 3rd assigned article.    
+
+- Smialek, J. "[Even as Americans grew richer, inequality persisted.](https://www.nytimes.com/2020/09/28/business/economy/coronavirus-pandemic-income-inequality.html)" *The New York Times,* 28 September 2020. 
+
+  
+
+  #### **<u>Instructions</u>**
+
+  *Complete the following activities. You'll earn 2 points for fully complete with reasonable effort, 1 point for at least half complete, and 0 points for less than half complete.* 
+
+  **Your answers should total 300-500 words **
+
+  #### **<u>Prompts</u>**
+
+1. According to the Badger/Quealy piece, what factors have driven the divergence in income inequality between U.S. cities? Which strike you as particularly important and/or interesting? 
+2. How has wealth inequality in the United States evolved over the time periods in the articles? How has the experience of different demographic groups varied? 
+3. Returning to the St. Louis Fed reading, what graphic(s) are particulary informative? Which are most aesthetically pleasing? What design choices stand out to you? 
+
