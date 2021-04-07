@@ -151,18 +151,20 @@ May 16 (Sun): Capstone 3 due
 
 
 
-### {10-02} 04/08 Intergenerational mobility
+### {10-02} 04/08 Neighborhoods and income mobility
 
-| ---                   | ---      |                                                              |
-| --------------------- | -------- | ------------------------------------------------------------ |
-| **Pre-class**         | Read     | Pew Research Center ["Many around the world were pessimistic about inequality even before the pandemic."](https://www.pewresearch.org/fact-tank/2020/08/06/many-around-the-world-were-pessimistic-about-inequality-even-before-pandemic/) 06 August 2020 |
-|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
-| **Lesson**            |          |                                                              |
-| **In-class activity** |          |                                                              |
+| ---                   | ---        |                                                              |
+| --------------------- | ---------- | ------------------------------------------------------------ |
+| **Pre-class**         | Read       | **(6p)**, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. ["The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility"](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_summary.pdf) **(Executive Summary)**<p> </p>[The Opportunity Atlas](https://www.opportunityatlas.org/) |
+|                       | *Optional* | **(92p)** Chetty, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. "[The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_paper.pdf)." January 2020. <p></p>**(105p)** Chetty, R., Hendren, N., Kline, P., and Saez, E. 2014 "[Where is the land of opportunity? The geography of intergenerational mobility in the United States"](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf). *massively long, but important paper!* |
+|                       | Complete   | Complete 10-02 pre-class activity on Blackboard              |
+| **Lesson**            |            |                                                              |
+| **In-class activity** |            | [10-02-inclass.Rmd](10-02-inclass.Rmd)<p></p>[10-02-inclass.html](10-02-inclass.html) |
+|                       |            |                                                              |
 
 
 
-### 
+
 
 ## Week 11 - Inequality
 
@@ -172,8 +174,9 @@ May 16 (Sun): Capstone 3 due
 
 | ---                   | ---      |                                                              |
 | --------------------- | -------- | ------------------------------------------------------------ |
-| **Pre-class**         | Read     | D. Hamilton and W. Darity, Jr. (2010). Can ‘Baby Bonds’ Eliminate the Racial Wealth Gap in Putative Post-Racial America? *Review of Black Political Economy*, 37(3,4):207-216. |
-|                       | Complete | Complete 10-02 pre-class activity on Blackboard              |
+| **Pre-class**         | Read     | **(2p)** Chetty, R., Hendren, N., and Katz, L. ["The Effects of Exposure to Better Neighborhoods on Children"](https://opportunityinsights.org/wp-content/uploads/2018/03/mto_exec_summary.pdf) (Executive Summary). May 2015<p></p> **(~10p)** Collinson, R. and Ludwig, J. ["Neighborhoods and Opportunity in America."](https://www.brookings.edu/research/neighborhoods-matter-for-opportunity-time-for-more-place-conscious-policy/) The Brookings Institution. 19 September 2019. |
+|                       | Optional | **(90p)** Chetty, Raj, Nathaniel Hendren, and  Lawrence F. Katz. "[The effects of exposure to better neighborhoods on children: New evidence from the Moving to Opportunity experiment.](https://opportunityinsights.org/wp-content/uploads/2018/03/mto_paper.pdf)" *American Economic Review* 106.4 (2016): 855-902.<p></p>**(12p)** Ludwig, Jens, Greg J. Duncan, Lisa A. Gennetian, Lawrence F. Katz, Ronald C. Kessler, Jeffrey R. Kling, and Lisa Sanbonmatsu. 2013.  [“Long-Term Neighborhood Effects on Low-Income Families: Evidence from  Moving to Opportunity.”](https://dash.harvard.edu/handle/1/12553723) *American Economic Review* 103, no. 3: 226–231. |
+|                       | Complete | Complete 11-01 pre-class activity on Blackboard              |
 | **Lesson**            |          |                                                              |
 | **In-class activity** |          |                                                              |
 

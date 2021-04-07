@@ -219,7 +219,7 @@ Chapters 5.9 and 5.10, [*Economy, Society, and Public Policy*](https://www.core-
 
    
 
-## PC April 05  - Trends in inequality 
+## PC April 06  - Trends in inequality 
 
 ### Read  
 
@@ -256,4 +256,37 @@ Kent, A., Ricketts, L., and Boshara, R. ["What wealth inequality in America look
 1. According to the Badger/Quealy piece, what factors have driven the divergence in income inequality between U.S. cities? Which strike you as particularly important and/or interesting? 
 2. How has wealth inequality in the United States evolved over the time periods in the articles? How has the experience of different demographic groups varied? 
 3. Returning to the St. Louis Fed reading, what graphic(s) are particulary informative? Which are most aesthetically pleasing? What design choices stand out to you? 
+
+
+
+## PC April 08 - Neighborhoods and income mobility
+
+### Read
+
+**(6p)** Chetty, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. ["The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility"](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_summary.pdf) **(Executive Summary)**
+
+[The Opportunity Atlas](https://www.opportunityatlas.org/)
+
+#### Optional
+
+**(92p)** Chetty, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. "[The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_paper.pdf)." January 2020. 
+
+**(105p)** Chetty, R., Hendren, N., Kline, P., and Saez, E. 2014 "[Where is the land of opportunity? The geography of intergenerational mobility in the United States"](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf). *massively long, but an important paper!*
+
+### Instructions
+
+*Complete the following activities. You'll earn 2 points for fully complete with reasonable effort, 1 point for at least half complete, and 0 points for less than half complete.* 
+
+**Your answers should total 300-500 words **
+
+You'll need to include pictures, so I recommend uploading a document rather than answering in the text box. 
+
+### Prompts
+
+After reading the executive summary, visit the [Opportunity Atlas](https://www.opportunityatlas.org/). First, take a moment to orient yourself. You may want to review the [FAQ](https://opportunityinsights.org/wp-content/uploads/2018/10/Atlas-User-Guide.pdf). Or, you can click on "Explore Stories"--> "Tutorial" for a walkthrough of functionality. The right panel lets you focus on outcomes for a particular subgroup by parental income, race/ethnicity, and/or gender. Some subgroups won't be possible if there is insufficient sample size, particularly for low-population areas.  find a town/area that is important or interesting to you. It could be where you grew up, where you've lived for a while, a place you're generally interested in learning more about. 
+
+1. What are the "outcome variables" that it plots? What exactly does "household income" mean as an outcome variable? 
+2. What geographic area did you choose, and why?
+3. Play around with outcomes and the subgroup restrictions. You can also explore neighborhood characteristics and see whether you can observe any (rough) correlations. 
+4. Select two maps that are strike you as particularly interesting and paste them (you can take a screenshot or click on "Download as Image"). For each one, write a few sentences about what we should take away from it. Does what you find align or contrast with any of the takeaways in the Chetty summary you read?
 

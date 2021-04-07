@@ -1,0 +1,108 @@
+---
+title: "10-02 in-class activity"
+author: "Emily Beam"
+date: "04-08-2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("janitor")
+# Run me first! 
+library(tidyverse)
+library(readr)
+```
+
+## Getting Started
+We're going to dig deeper into the correlates of mobility by using [Opportunity Atlas](https://opportunityatlas.org/) to create some plots. We're going to make a scatter plot!
+
+1. Visit [Opportunity Atlas](https://opportunityatlas.org/) and search for the place you chose for your pre-class activity. If you no longer like this place, you can pick a new one. 
+
+2. Zoom in or out, as necessary, so that you get a "reasonable" geographic area that contains 30-50 census tracts (not a hard and fast rule, but each tract will be one data point).
+
+3. Click on "Download the data" at the bottom right-hand corner. 
+
+  - You want to download "Just what is on the screen." If this option is not available, make sure you select "Single Subgroup." 
+  - You can pick "all" or select a specific subgroup, but I wouldn't recommend any group that leads to a lot of grey tracts. 
+  - I recommend you stick with "household income" as your outcome variable, but feel free to select a different outcome variable.
+
+4. Get all your options set up and download the data set. 
+
+5. Pick a second variable you want to correlate with your first variable, and download that in the same way. I recommend "Density of Jobs in 2013." You want the first to be an "outcome" and the second to be a "neighborhood characteristic."
+
+**In any case, I'd recommend you pick the same variables as your groupmates, so when you compare graphs it makes sense!**
+
+
+## Loading data
+
+Make sure your data files are in the right working directory. You may need to adjust the names.
+```{r message=FALSE}
+# Import outcome 1 and save as a df
+
+income <- read_csv("shown_tract_kfr_rP_gP_pall.csv")
+
+# Import outcome 2 and save as a df
+
+jobdensity <- read_csv("shown_tract_job_density_2013.csv")
+
+```
+
+
+Take a look at your data (change names if you renamed your data frames!)
+```{r}
+
+income
+jobdensity
+```
+
+Now, we're going to use `join_by()` to merge our two data sets. Note that the `by` part of the function is optional. If you delete it, it will join based on all variables with the same names across the two data sets - in this case, just `tract` and `Name`.
+
+```{r}
+merged_data <- full_join(by = c("tract", "Name"), income, jobdensity)
+merged_data
+```
+
+
+# Exploratory analysis 
+
+A simple way to look at the relationship between two variables is to calculate a correlation coefficent. Here, I do it using Base R. There are other ways to do this as well. But, this gives us one number, and not a ton of information. 
+
+(Note that you'll need to change the variable names to match yours!)
+
+```{r}
+
+cor.test(merged_data$Household_Income_rP_gP_pall, merged_data$Density_of_Jobs_in_2013,method="pearson")
+
+```
+
+
+Let's instead make a scatter plot: 
+
+```{r}
+  ggplot(data = merged_data, mapping = aes(y = Household_Income_rP_gP_pall, x = Density_of_Jobs_in_2013, color=Name )) + 
+      geom_point(show.legend=FALSE) 
+  
+```
+
+
+You may want to play around with the scale if you get a lot of bunching. For density of jobs, for example, it looks a lot better if I take a log.
+```{r}
+  ggplot(data = merged_data, mapping = aes(y = Household_Income_rP_gP_pall, x = Density_of_Jobs_in_2013, color=Name )) + 
+      geom_point(show.legend=FALSE) + 
+  scale_x_log10()
+```
+
+What if you want to estimate a line of best fit? This is regression land, but we can give it a go. Notice here that I moved `color=Name` out of the main ggplot and into `geom_point` only. The idea is that I want to color my points based on city, but I don't want separate regression lines per city. You can play w/ moving arguments around to see how it does or does not make a difference.
+
+```{r}
+  ggplot(data = merged_data, mapping = aes(y = Household_Income_rP_gP_pall, x = Density_of_Jobs_in_2013,  )) + 
+      geom_point(aes(color=Name), show.legend=FALSE) + 
+    geom_smooth(method=lm, se =FALSE, show.legend=FALSE) + 
+    scale_x_log10() 
+```
+
+# All done!
+
+1. Share w/ your group mates. You can paste in your chat or in your shared Google doc.
+
+2. Knit and upload. If you've got some time, format that graph.

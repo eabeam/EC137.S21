@@ -37,9 +37,9 @@ essential <- essential_raw %>%
 
 Right now there's a row for each approved construction site. We need to condense that down to get counts of construction sites by different variables. We can do this by using `group_by()` and `summarize()`. You *don't* need to do anything with the data to make these two graphs.
 ```{r summarize-data-borough}
-essential_by_borough <- essntial %>% 
+essential_by_borough <- essential %>% 
   group_by(BOROUGH) %>% 
-  summarize(total == n()) %>% 
+  summarize(total = n()) %>% 
   mutate(proportion = total / sum(total))
 ```
 
