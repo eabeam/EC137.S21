@@ -1,0 +1,146 @@
+---
+title: "Exercise 03 Ray Curtis EC 137"
+author: "Curtis"
+date: "4/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# install the latest version of bls scraper
+library(blscrapeR)
+library(tidyverse)
+library(ggpubr)
+```
+
+What is BLS Scraper? 
+```{r description, message = FALSE}
+# not for the class, but read int the api key
+set_bls_key("f8cf85a384824d14af5a42667fad7f77", overwrite = TRUE)
+
+readRenviron("~/.Renviron")
+
+Sys.getenv("BLS_KEY")
+```
+```{r}
+library(blscrapeR)
+
+# Grab several data sets from the BLS at onece.
+# NOTE on series IDs: 
+# EMPLOYMENT LEVEL - Civilian labor force - LNS12000000
+# UNEMPLOYMENT LEVEL - Civilian labor force - LNS13000000
+# UNEMPLOYMENT RATE - Civilian labor force - LNS14000000
+df <- bls_api(c("LNS12000000", "LNS13000000", "LNS14000000"),
+              startyear = 2000, endyear = 2010, Sys.getenv("BLS_KEY")) %>%
+    # Add time-series dates
+    dateCast()
+
+
+# Plot employment level
+library(ggplot2)
+gg1200 <- subset(df, seriesID=="LNS12000000")
+library(ggplot2)
+ggplot(gg1200, aes(x=date, y=value)) +
+    geom_line() +
+    labs(title = "Employment Level - Civ. Labor Force")
+```
+```{r map of unemplyed}
+
+df2 <- get_bls_state()
+
+tibble(df2)
+
+
+# use the map_bls function
+map_bls(map_data = df2, fill_rate = "unemployed_rate")
+
+```
+```{r different example}
+
+# to pull a new variable from bls, all we have to do is go to the link below, and find the Series ID code to pull it into R
+
+# Link:https://www.bls.gov/help/hlpforma.htm#ML
+
+
+df3 <- bls_api(c("MLUMS00NN0001003"),
+              startyear = 2000, endyear = 2010, Sys.getenv("BLS_KEY")) %>%
+    # Add time-series dates
+    dateCast()
+
+# lets plot the mass layoff statistics from 2000-2010
+
+
+ggplot(df3, aes(x=date, y=value)) +
+    geom_line() +
+    labs(title = "Mass Layoffs 2000-2010")
+
+```
+```{r State level data}
+df2 <- get_bls_state()
+
+tibble(df2)
+
+# use the map_bls function
+graph1 <- map_bls(map_data = df2, fill_rate = "unemployed_rate")
+
+
+# we can plot other things as well on this
+# We should tibble this get_bls_state to see what other variables we can use to plot
+tibble(df2)
+
+# lets choose to do labor force and labor force rate instead
+
+# all we're changing for ggplot is the variable of the bls_state data frame we want to plot
+# i.e. labor_force_rate or labor_force
+
+graph2 <- map_bls(map_data = df2, fill_rate = "labor_force_rate")
+
+graph3 <- map_bls(map_data = df2, fill_rate = "labor_force")
+
+
+ggarrange(graph1, graph2, graph3)
+
+# or
+graph1
+graph2
+graph3
+
+```
+```{r County Level Data}
+# In the bls scraper, it also contains county level data, so you can see the distribution of these varibles at a state level
+
+# name a new data frame
+df4 <- get_bls_county() # same as before, just count
+
+# tibble to get a quick view
+tibble(df4)
+
+# Now let's make a map in the same fashion for those employed in each county of each state
+graph4 <- map_bls(map_data = df4, fill_rate = "employed")
+
+graph4
+
+# although this is hard to read, it is interesting to see where certain hot spots are
+
+# we can also analyze certain states if we wanted to
+graph5 <- bls_map_county(map_data = df4, fill_rate = "employed", stateName = "Vermont")
+
+# this graph will show only Vermont's employment levels 
+graph5
+```
+```{r Quick employment levels}
+
+# bls scraper also offers some quick ways to pull employment statistics
+
+df5 <-quick_employed_level()
+
+tibble(df5)
+
+# this works with several other economic variables that can be  found here:
+# https://cran.r-project.org/web/packages/blscrapeR/blscrapeR.pdf
+
+
+
+```
+

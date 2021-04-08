@@ -2,7 +2,7 @@
 
 
 
-**TLDR**; Make something similar to what you did for Capstone 01, but do it with R. T about something related to inequality, but you can draw from Unit 01 topics if you prefer.
+**TLDR**; Make something similar to what you did for Capstone 01, but do it with R. Think about something related to inequality, but you can draw from Unit 01 topics if you prefer.
 
 **Important:** You may work in groups of **two to three** on this Capstone. If you do, please notify me by e-mail in advance **before** the showcase so I can adjust small groups as needed.
 
@@ -11,6 +11,8 @@
 ## Research questions
 
 ### 1. Place-based inequality 
+
+#### Question
 
 1. Select a U.S. county of interest to you - this could be a place where you grew up, a place where you've spent substantial time, or a place that fascinates you (Youngstown, Ohio, anyone?)
 
@@ -24,13 +26,13 @@
 
 4. When you present, take care to make sure you understand what data you are working with. What is the time period? How might neighborhoods have changed between then and now?  You may find it helpful to reference the full [Opportunity Atlas paper](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_paper.pdf).
 
-You will 
+#### Data
 
 **Beginner/Intermediate**: Use this data set: [atlas.dta](data/atlas.dta). Note that you will need to install the `haven()` package to use the code `read_dta()` to import it. Restrict your entire analysis to the county you have chosen to focus on - so you will have one observation per census tract for that county.
 
 
 
-You will find this [data description](atlas_) extremely helpful.
+You will find this [data description](atlas_datadescription.html) extremely helpful.
 
 **Advanced**: You can download either County- or Census-tract data [here](https://opportunityinsights.org/data/). You would want to find the data corresponding to "The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility" and then select the appropriate data depending on your level of analysis: 
 
@@ -99,20 +101,38 @@ milwaukee <- filter(atlas,state ==  55 & county == 079
 
 ### 2. Global inequality: 
 
+#### Question
+
 How has inequality changed for countries in a particular region over time? 
 
- 1. Install the `WDI()` package. You will want to spend some time with [the documentation](https://www.rdocumentation.org/packages/WDI/versions/2.7.3) to understand how to use it. 
-2. You can use the WDI search tools embedded in the package, or you can dig around the World Bank [data repository](https://data.worldbank.org/) here to get a better sense of the possibilities
+
+
 3. Select a region of the world of interest to you. Examine how inequality has changed over time at the country level across various indicators. 
 4. Explore the correlations between inequality and another potentially relevant factor, taking note that these explorations are not sufficient to give us evidence of causality. It could be GDP/capita, poverty rates, etc. 
 
+#### Data
+
+The World Bank [data repository](https://data.worldbank.org/) has excellent country-level data on inequality. You can download it directly and then import it into R, or you can use the  `WDI()` package. If you go for the package, you will want to spend some time with [the documentation](https://www.rdocumentation.org/packages/WDI/versions/2.7.3) to understand how to use it. 
+
 ### 3. Inequality in labor market outcomes in the U.S.
 
-Check out Ray's demo of a neat package that lets you easily access BLS data. Alternatively, you can download raw data from BLS/FRED etc. 
+#### Questions
 
-Explore trends in inequality in labor market outcomes (unemployment rates, labor force participation rates, wages) by demographic subgroups of your choosing 
+Explore trends in inequality in labor market outcomes (unemployment rates, labor force participation rates, wages) by demographic subgroups of your choosing.
 
-*This is fairily similar to the Capsone 01 prompt! If you do this, make sure you are doing a substantially different topic from Capstone 01.*
+#### Data
+
+Recall that you can import just about any Excel sheet or .csv file into R! That means all the resources you used in Unit 01 (FRED, BLS, IPUMS, etc) are at your disposal.
+
+To really step things up, check out Ray's demo of a neat package that lets you easily access BLS data! 
+
+- R Markdown file: [BLSdemo-curtis.Rmd](BLSdemo-curtis.Rmd)
+- Output: [BLSdemo-curtis.pdf](BLSdemo-curtis.pdf)
+- Video demonstration (available on Blackboard embedded in Capstone 02 overview)
+
+There is also some pretty easy-to-work with data embedded in a recent #TidyTuesday. See the description and links in the [08-01 PC for advanced users](https://eabeam.github.io/EC137.S21/R_preclass.html#advanced-user-n93)
+
+*This is fairily similar to the Capstone 01 prompt! If you do this, make sure you are doing a substantially different topic from Capstone 01.*
 
 ### 4. Other
 
@@ -124,4 +144,22 @@ To be suitable it must (a) have a clear connection to one of our topics in Units
 
 ## Specifications
 
-1. Make two charts and one table. One chart can be a map if you like.
+All the details are here! :point_down: :point_down: :point_down:
+
+**Specifications powerpoint**	[pptx](Capstone2_Presentation.pptx)		[pdf](Capstone2_Presentation.pdf)
+
+##### Deliverables
+
+1. Slide deck as a PDF 
+2. Slide deck as .pptx
+3. Knit output file (pdf/html/docx) that contains: 
+   - All code for all analysis
+   - Capstone reflection with bibliography
+   - Link to your video presentation
+
+4. Data
+   - Using a package: Skip this step, as you will call the data in your code!
+   - Importing data: Include the raw .xlxs or .csv file
+     - If it is fairly big - zip it first, is it better?
+     - If it is massive – use [UVM FileTransfer ](https://filetransfer.uvm.edu/)and/or e-mail me
+
