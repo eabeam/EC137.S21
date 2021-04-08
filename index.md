@@ -31,15 +31,13 @@ See all pre-class activities for the R unit [here](R_preclass.html)
 
 [Exercise 03](03-exercise.html) - Due April 04 @ 11:59pm
 
-Exercise 04 - Due April 18 @ 11:59pm 
+[Exercise 04](04-exercise.html) - Due April 18 @ 11:59pm 
 
 Exercise 05 - Due May 02 @ 11:59pm 
 
-# Capstones
 
 
-
-## Capstone 2
+# Capstone 2
 
 [Project description](Capstone 02.html)
 
@@ -57,7 +55,7 @@ April 25 (Sun): Capstone 2 due
 
 
 
-## Capstone 3
+# Capstone 3
 
 May 9 (Sun): Optional rough draft due 
 
