@@ -5,7 +5,9 @@ author: "Emily Beam"
 output: html_document
 ---
 
-# 
+# EC137: Using Data for Economic Policy
+
+Welcome! 
 
 
 
@@ -164,7 +166,7 @@ May 16 (Sun): Capstone 3 due
 | **Pre-class**         | Read       | **(6p)**, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. ["The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility"](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_summary.pdf) **(Executive Summary)**<p> </p>[The Opportunity Atlas](https://www.opportunityatlas.org/) |
 |                       | *Optional* | **(92p)** Chetty, R., Friedman, J. N., Hendren, N., Jones, M. R., and Porter, S. R. "[The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_paper.pdf)." January 2020. <p></p>**(105p)** Chetty, R., Hendren, N., Kline, P., and Saez, E. 2014 "[Where is the land of opportunity? The geography of intergenerational mobility in the United States"](https://www.nber.org/system/files/working_papers/w19843/w19843.pdf). *massively long, but important paper!* |
 |                       | Complete   | Complete 10-02 pre-class activity on Blackboard              |
-| **Lesson**            |            |                                                              |
+| **Lesson**            |            | Lecture slides: [pdf](LecturesSlides-10-02.pdf)   or [pptx](LecturesSlides-10-02.pptx) |
 | **In-class activity** |            | [10-02-inclass.Rmd](10-02-inclass.Rmd)<p></p>[10-02-inclass.html](10-02-inclass.html) |
 |                       |            |                                                              |
 
