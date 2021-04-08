@@ -41,7 +41,15 @@ Exercise 05 - Due May 02 @ 11:59pm
 
 ## Capstone 2
 
-April 18 (Sun): Optional rough draft due
+[Project description](Capstone 02.html)
+
+**Specifications powerpoint**	[pptx](Capstone2_Presentation.pptx)		[pdf](Capstone2_Presentation.pdf)
+
+
+
+**Deadlines**
+
+April 18 (Sun): Optional rough draft due *(option B of Exercise 04)*
 
 April 20 (T): Project showcase
 

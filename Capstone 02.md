@@ -2,7 +2,7 @@
 
 
 
-TLDR; Make something similar to what you did for Capstone 01, but do it with R. I'd recommend thinking about something related to inequality, but you can draw from Unit 01 topics if you prefer.
+**TLDR**; Make something similar to what you did for Capstone 01, but do it with R. T about something related to inequality, but you can draw from Unit 01 topics if you prefer.
 
 **Important:** You may work in groups of **two to three** on this Capstone. If you do, please notify me by e-mail in advance **before** the showcase so I can adjust small groups as needed.
 
@@ -24,9 +24,13 @@ TLDR; Make something similar to what you did for Capstone 01, but do it with R. 
 
 4. When you present, take care to make sure you understand what data you are working with. What is the time period? How might neighborhoods have changed between then and now?  You may find it helpful to reference the full [Opportunity Atlas paper](https://opportunityinsights.org/wp-content/uploads/2018/10/atlas_paper.pdf).
 
-
+You will 
 
 **Beginner/Intermediate**: Use this data set: [atlas.dta](data/atlas.dta). Note that you will need to install the `haven()` package to use the code `read_dta()` to import it. Restrict your entire analysis to the county you have chosen to focus on - so you will have one observation per census tract for that county.
+
+
+
+You will find this [data description](atlas_) extremely helpful.
 
 **Advanced**: You can download either County- or Census-tract data [here](https://opportunityinsights.org/data/). You would want to find the data corresponding to "The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility" and then select the appropriate data depending on your level of analysis: 
 
@@ -97,7 +101,7 @@ milwaukee <- filter(atlas,state ==  55 & county == 079
 
 How has inequality changed for countries in a particular region over time? 
 
- 1. Install the `WDI()` package
+ 1. Install the `WDI()` package. You will want to spend some time with [the documentation](https://www.rdocumentation.org/packages/WDI/versions/2.7.3) to understand how to use it. 
 2. You can use the WDI search tools embedded in the package, or you can dig around the World Bank [data repository](https://data.worldbank.org/) here to get a better sense of the possibilities
 3. Select a region of the world of interest to you. Examine how inequality has changed over time at the country level across various indicators. 
 4. Explore the correlations between inequality and another potentially relevant factor, taking note that these explorations are not sufficient to give us evidence of causality. It could be GDP/capita, poverty rates, etc. 

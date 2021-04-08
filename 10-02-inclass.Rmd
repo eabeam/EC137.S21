@@ -28,7 +28,7 @@ We're going to dig deeper into the correlates of mobility by using [Opportunity 
 
 4. Get all your options set up and download the data set. 
 
-5. Pick a second variable you want to correlate with your first variable, and download that in the same way. I recommend "Density of Jobs in 2013." You want the first to be an "outcome" and the second to be a "neighborhood characteristic."
+5. Pick a second variable you want to correlate with your first variable, and download that in the same way. I recommend "Job growth rate from 2004 to 2013" or "Density of Jobs in 2013." You want the first to be an "outcome" and the second to be a "neighborhood characteristic."
 
 **In any case, I'd recommend you pick the same variables as your groupmates, so when you compare graphs it makes sense!**
 
