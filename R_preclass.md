@@ -290,3 +290,41 @@ After reading the executive summary, visit the [Opportunity Atlas](https://www.o
 3. Play around with outcomes and the subgroup restrictions. You can also explore neighborhood characteristics and see whether you can observe any (rough) correlations. 
 4. Select two maps that are strike you as particularly interesting and paste them (you can take a screenshot or click on "Download as Image"). For each one, write a few sentences about what we should take away from it. Does what you find align or contrast with any of the takeaways in the Chetty summary you read?
 
+
+
+
+
+
+
+
+
+## PC April 13 - Impact of Policy on Inequality
+
+### Read
+
+ **(2p)** Chetty, R., Hendren, N., and Katz, L. ["The Effects of Exposure to Better Neighborhoods on Children"](https://opportunityinsights.org/wp-content/uploads/2018/03/mto_exec_summary.pdf) (Executive Summary). May 2015
+
+**(~10p)** Collinson, R. and Ludwig, J. ["Neighborhoods and Opportunity in America."](https://www.brookings.edu/research/neighborhoods-matter-for-opportunity-time-for-more-place-conscious-policy/) The Brookings Institution. 19 September 2019.    
+
+
+
+#### Optional
+
+**(90p)** Chetty, Raj, Nathaniel Hendren, and  Lawrence F. Katz. "[The effects of exposure to better neighborhoods on children: New evidence from the Moving to Opportunity experiment.](https://opportunityinsights.org/wp-content/uploads/2018/03/mto_paper.pdf)" *American Economic Review* 106.4 (2016): 855-902.
+
+**(12p)** Ludwig, Jens, Greg J. Duncan, Lisa A. Gennetian, Lawrence F. Katz, Ronald C. Kessler, Jeffrey R. Kling, and Lisa Sanbonmatsu. 2013.  [“Long-Term Neighborhood Effects on Low-Income Families: Evidence from  Moving to Opportunity.”](https://dash.harvard.edu/handle/1/12553723) *American Economic Review* 103, no. 3: 226–231.
+
+### Instructions
+
+*Complete the following activities. You'll earn 2 points for fully complete with reasonable effort, 1 point for at least half complete, and 0 points for less than half complete.* 
+
+**Your answers should total 300-500 words **
+
+### Prompts
+
+1. What *is* the Moving to Opportunty demonstration? That is, what was the "treatment"? 
+2. One challenge with measing the causal impact of neighborhood is that there are all sorts of factors correlated with one's decision to move in or out of a place. For example, parents that accept a longer work commute move to neighborhoods with higher-performing schools may be parents that particularly value education and invest in their chidlren in other ways. How do Chetty et al. ensure they avoid this concern?
+3. What questions were Chetty et. al using the MTO demonstration to answer?
+4. What do they find, and how does it contrast with previous studies? 
+5. What do you think policymakers should take away from this study. Put differently, based on these results what policies strike you as most likely to help kids growing up in "low-opportunity" neighborhoods? Should MTO be scaled up and/or does it suggest other policy options? 
+
