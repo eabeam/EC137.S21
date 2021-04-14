@@ -28,7 +28,7 @@
 
 #### Data
 
-**Beginner/Intermediate**: Use this data set: [atlas.dta](data/atlas.dta). Note that you will need to install the `haven()` package to use the code `read_dta()` to import it. Restrict your entire analysis to the county you have chosen to focus on - so you will have one observation per census tract for that county.
+**Beginner/Intermediate**: Use this data set: [atlas.dta](atlas.dta). Note that you will need to install the `haven()` package to use the code `read_dta()` to import it. Restrict your entire analysis to the county you have chosen to focus on - so you will have one observation per census tract for that county.
 
 
 
