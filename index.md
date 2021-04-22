@@ -198,11 +198,17 @@ May 16 (Sun): Capstone 3 due
 
 Submit your draft slides on Blackboard before class
 
+[12-01 Class slides](LecturesSlides-12-01.pdf)
+
 ### {12-02} 04/22 Policy writing workshop
 
 We'll cover the art of policy writing to gear up for the final capstone
 
+[12-02 Class slides](LecturesSlides-12-02_PolicyWriting.pdf)
 
+Details on [Capstone 03](Capstone 03.html)
+
+### 
 
 # Unit 3: Putting it all together
 
