@@ -59,6 +59,8 @@ April 25 (Sun): Capstone 2 due
 
 # Capstone 3
 
+[Project description](Capstone 03.html)
+
 May 9 (Sun): Optional rough draft due 
 
 May 11 (T): Project showcase
