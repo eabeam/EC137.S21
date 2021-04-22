@@ -10,7 +10,13 @@ You will write a **policy brief of 1,000-1,500 words** that will include **two c
 
 ## Deadlines
 
+May 02 (Sun) Exercise 05 (pre-work)
 
+May 09 (Sun): Optional rough draft due 
+
+May 11 (T): Project showcase
+
+May 16 (Sun): Capstone 3 due
 
 ## Prompt 
 
