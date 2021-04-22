@@ -98,13 +98,13 @@ There is no "one" way to make a policy brief. However, for the sake of our sanit
 
 **3.**   Pre-existing policies/evidence: Summarize what policies are being considered, what we know about them.
 
-**4.**   Policy options: Include 2-3 policy options, weigh advantages and disadvantages. Link to existing evidence of what works when possible. 
+**4.**   Policy options: Discuss possible policy option(s) specifically. Link to existing evidence of what works when possible. 
 
 **5.**   Policy recommendation: Make a clear recommendation 
 
-**6.**   References: Include any citations you have. Throughout your brief, you must cite **at least 3** **papers** from <u>peer-reviewed, academic journal articles</u>, however you’ll likely have far more citations – use in-text citations when relying on other sources to support your statements, especially in statement of problem/background and pre-existing policies/evidence. Use MLA, APA, or Chicago formatting - it does not count toward youword limit.
+**6.**   References: Include any citations you have. Throughout your brief, you must have at least **4 references** besides yoru data, of which you have **at least 2 papers** from <u>peer-reviewed, academic journal articles</u>. Use in-text citations when relying on other sources to support your statements, especially in statement of problem/background and pre-existing policies/evidence. Use MLA, APA, or Chicago formatting - it does not count toward youword limit.
 
-*Your data analysis will likely be integrated into (2) and (3)*
+*Your data  will likely be integrated into (2) and (3)*
 
 **Your policy brief text should be 1,000-1,500 words** (excluding references, including executive summary). If it's too long, cut it! Submit as a word doc or PDF.
 
