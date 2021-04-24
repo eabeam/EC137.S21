@@ -6,6 +6,8 @@
 
 **Important:** You may work in groups of **two to three** on this Capstone. If you do, please notify me by e-mail in advance **before** the showcase so I can adjust small groups as needed.
 
+[TOC]
+
 
 
 ## Research questions
@@ -73,15 +75,9 @@ Calculating weighted summary statistics
 
 
 
-```{r}
-# Install and load package
-install.packages("SDMTools")
-library(SDMTools)
+The `SDMTools` package previously described here likely won't work w/ your version of R! Try this instead: https://www.r-bloggers.com/2020/01/using-summarise_at-weighted-mean-tidyverse-approach/
 
-#Report weighted summary statistics*
-wt.mean(atlas$yvar, atlas$count_pooled)
-wt.sd(atlas$yvar,atlas$count_pooled)
-```
+
 
 Subset your variables
 
@@ -162,4 +158,16 @@ All the details are here! :point_down: :point_down: :point_down:
    - Importing data: Include the raw .xlxs or .csv file
      - If it is fairly big - zip it first, is it better?
      - If it is massive – use [UVM FileTransfer ](https://filetransfer.uvm.edu/)and/or e-mail me
+
+## Other tips
+
+
+
+One way to look at your data is to plot a distribution of an outcome. You can do this with a histogram with one variable or multiple variables! You might also consider better ways of showing this, using a smoothed density plot or a violin plot. 
+
+Download this set of density examples:
+
+ [R_density_example.html](R_density_example.html) 
+
+ [R_density_example.Rmd](R_density_example.Rmd)
 
