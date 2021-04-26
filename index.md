@@ -224,10 +224,16 @@ Details on [Capstone 03](Capstone 03.html)
 
 | ---                   | ---      |                                                              |
 | --------------------- | -------- | ------------------------------------------------------------ |
-| **Pre-class**         | Read     | **(p10)** Webber, Douglas. [“Is the Return to Education the Same for Everybody?](https://wol.iza.org/articles/is-the-return-to-education-the-same-for-everybody/long)” *IZA World of Labor*, October 1, 2014. *Read the "long"* version! |
+| **Pre-class**         | Read     | **(p10)** Webber, Douglas. [“Is the Return to Education the Same for Everybody?](https://wol.iza.org/articles/is-the-return-to-education-the-same-for-everybody/long)” *IZA World of Labor*, October 1, 2014. *Read the "full article"* version! |
 |                       | Complete | Answer reading response questions on Blackboard              |
 | **Lesson**            |          |                                                              |
-| **In-class activity** |          |                                                              |
+| **In-class activity** |          | [Major decisions: What graduates earn over their lifetimes](https://www.brookings.edu/blog/up-front/2020/10/08/major-decisions-what-graduates-earn-over-their-lifetimes/)  <p></p>[The Hamilton Project: Earnings by College Major](https://abigail-lee.github.io/earnings-by-college-major/)<p></p>[The Hamilton Project: Undergraduate Student Loan Payment Calculator](https://www.hamiltonproject.org/charts/undergraduate_student_loan_calculator) |
+
+### {13-02} 04/29 In-class work day
+
+No pre-class activitys. In-class work day!
+
+
 
 
 

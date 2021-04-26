@@ -328,3 +328,35 @@ After reading the executive summary, visit the [Opportunity Atlas](https://www.o
 4. What do they find, and how does it contrast with previous studies? 
 5. What do you think policymakers should take away from this study. Put differently, based on these results what policies strike you as most likely to help kids growing up in "low-opportunity" neighborhoods? Should MTO be scaled up and/or does it suggest other policy options? 
 
+
+
+# [Unit 3] Pre-Class Activities
+
+
+
+## PC April 27 - Returns to Education
+
+### Read
+
+**(p10)** Webber, Douglas. [“Is the Return to Education the Same for Everybody?](https://wol.iza.org/articles/is-the-return-to-education-the-same-for-everybody/long)” *IZA World of Labor*, October 1, 2014. *Read the "full article"* version!
+
+### Instructions
+
+*Complete the following activities. You'll earn 2 points for fully complete with reasonable effort, 1 point for at least half complete, and 0 points for less than half complete.* 
+
+**Answer some or all of the prompts below, but your answers should total 300-500 words **
+
+
+
+### Prompts
+
+1. Consider the following statement: 10 year after graduating college, the median-earning economics major earns 50% more than the median earning biology major (\$83k vs ​\$56k), and 150% more than a high school graduate (\$83k vs \$33k). (Data taken from [here](https://www.hamiltonproject.org/charts/career_earnings_by_college_major)). 
+
+   a. Based on the readings, why would it be inaccurate to tell a room full of biology majors that if they all switched to economics, they would (more or less on average) increase their earnings 10 years out by 50%? What other factors might be important? 
+
+   b. What additional factors beyond what you already listed might be important for why it would also be inaccurate to tell a room full of high school seniors that if they all become economics majors, they would (more or less on average) increase their earnings 10 years out by 150%? 
+
+2. What **individual-level factors influence** a person's return to education? Are there factors that were not discussed in the article?
+3. What characteristics of a student's **institution** might affect their returns to education?
+4. There have been a lot recent news and debate about whether going to college is "worth it." Where do the authors of this policy brief fall on this debate, and under what circumstances would it not be worth it? Are there other factors they may not be considering?
+
