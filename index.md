@@ -225,6 +225,7 @@ Details on [Capstone 03](Capstone 03.html)
 | ---                   | ---      |                                                              |
 | --------------------- | -------- | ------------------------------------------------------------ |
 | **Pre-class**         | Read     | **(p10)** Webber, Douglas. [“Is the Return to Education the Same for Everybody?](https://wol.iza.org/articles/is-the-return-to-education-the-same-for-everybody/long)” *IZA World of Labor*, October 1, 2014. *Read the "full article"* version! |
+|                       | Optional | Emmons, William, Kent, Ana H., and Ricketts., Lowell R.[Is College Still Worth It?](https://files.stlouisfed.org/files/htdocs/publications/review/2019/10/15/is-college-still-worth-it-the-new-calculus-of-falling-returns.pdf) |
 |                       | Complete | Answer reading response questions on Blackboard              |
 | **Lesson**            |          |                                                              |
 | **In-class activity** |          | [Major decisions: What graduates earn over their lifetimes](https://www.brookings.edu/blog/up-front/2020/10/08/major-decisions-what-graduates-earn-over-their-lifetimes/)  <p></p>[The Hamilton Project: Earnings by College Major](https://abigail-lee.github.io/earnings-by-college-major/)<p></p>[The Hamilton Project: Undergraduate Student Loan Payment Calculator](https://www.hamiltonproject.org/charts/undergraduate_student_loan_calculator) |
