@@ -1,5 +1,9 @@
 # Lesson Plan 
 
+[TOC]
+
+
+
 ## 07.01 Intro
 
 ### Before class 
@@ -243,7 +247,37 @@ We'll cover the art of policy writing to gear up for the final capstone
 
 ### {14-01} 05/04 Impacts of student debt
 
+#### Realized (condensing 3 lectures in one w/o pre-class acitivty)
 
+
+
+1. Assign students to their channels. Merge the two small ones together --> 7 groups total. 
+
+   Each person read one article and "present" to the others 
+
+   Member 1: Carey, K. ["What about tackling the causes of student debt?](https://www.nytimes.com/2020/11/18/upshot/student-debt-forgiveness-biden.html) *The New York Times.* 18 November 2020.
+
+   Member 2: **(8p)** Fry, R. ["The changing profile of student borrowers."](https://www.pewresearch.org/social-trends/2014/10/07/the-changing-profile-of-student-borrowers/) Pew Research Center. 07 Oct 2014.
+
+   Member 3: **(3p)** Dynarski, S. ["Student Debt"](https://inequality.stanford.edu/sites/default/files/Pathways_SOTU_2019_StudentDebt.pdf) *The Poverty and Inequality Report 2019*
+
+   Member 4: Black, Sandra, Amy Filipek, Jason Furman, Laura Giuliano, and Ayushi Narayan. “Student Loans and College Quality: Effects on Borrowers and the Economy.” *VoxEU.Org* (blog), August 4, 2016. https://voxeu.org/article/student-loans-and-college-quality-effects-borrowers-and-economy
+
+   Member 5: **(10p)** Chapman**, Bruce. [“Income Contingent Loans in Higher Education Financing.”](https://wol.iza.org/articles/income-contingent-loans-in-higher-education-financing/long) *IZA World of Labor*, February 1, 2016. *(read the "long" version!)*
+
+
+
+Read your article and fill out the template. "Present" your article to your groupmates hitting on the big pictures 
+
+Together, discuss the following questions
+
+
+
+**06 May**  **In-class** **workday**
+
+
+
+#### Alternative
 
 | ---                   | ---                 |                                                              |
 | --------------------- | ------------------- | ------------------------------------------------------------ |

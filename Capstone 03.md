@@ -8,6 +8,8 @@ You will write a **policy brief of 1,000-1,500 words** that will include **two c
 
 **You can work in groups of 2-3**
 
+[Rubric!](PolicyBrief_Rubric_EC137_S21.pdf)
+
 ## Deadlines
 
 May 02 (Sun) Exercise 05 (pre-work)

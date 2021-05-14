@@ -67,6 +67,8 @@ May 11 (T): Project showcase
 
 May 16 (Sun): Capstone 3 due
 
+[Capstone 3 Rubric](PolicyBrief_Rubric_EC137_S21.pdf)
+
 
 
 
@@ -271,22 +273,11 @@ No pre-class activitys. In-class work day!
 
 
 
-### 
-
 ### {14-02} 05/06 Student debt reform
 
+In-class work day! 
 
 
-| ---                   | ---      |                                                              |
-| --------------------- | -------- | ------------------------------------------------------------ |
-| **Pre-class**         | Read     | **(10p)** Chapman**, Bruce. [“Income Contingent Loans in Higher Education Financing.”](https://wol.iza.org/articles/income-contingent-loans-in-higher-education-financing/long) *IZA World of Labor*, February 1, 2016. *(read the "long" version!)* |
-|                       | Complete |                                                              |
-| **Lesson**            |          |                                                              |
-| **In-class activity** |          |                                                              |
-
-
-
-### 
 
 ## Week 15 - Conclusion
 
